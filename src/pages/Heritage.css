@@ -35,8 +35,18 @@
 .heritage-hero .hero-subtitle {
   font-family: 'Ubuntu', sans-serif;
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-  margin: 0;
+  margin: 0 0 1rem 0;
   opacity: 0.95;
+}
+
+.hero-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.8;
+  margin: 0;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .heritage-hero .hero-overlay {
@@ -171,7 +181,236 @@
   font-weight: 600;
 }
 
+/* Traditions Section */
+.traditions-section {
+  padding: 5rem 2rem;
+  background: #f8f9fa;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-main-title {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.traditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tradition-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.tradition-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  border-color: #667eea;
+}
+
+.tradition-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.tradition-card:hover .tradition-icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.tradition-icon {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.tradition-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+.tradition-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+/* Achievements Section */
+.achievements-section {
+  padding: 5rem 2rem;
+  background: #ffffff;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.achievement-card {
+  background: #f8f9fa;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: #667eea;
+  background: white;
+}
+
+.achievement-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon-wrapper {
+  transform: scale(1.15);
+}
+
+.achievement-icon {
+  width: 35px;
+  height: 35px;
+  color: white;
+}
+
+.achievement-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin: 0 0 0.75rem 0;
+  font-weight: 600;
+}
+
+.achievement-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* Heritage CTA Section */
+.heritage-cta {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: white;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.8;
+  color: white;
+  opacity: 0.95;
+  margin: 0 0 2.5rem 0;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.2rem 2.5rem;
+  background: white;
+  color: #667eea;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background: #f8f9fa;
+}
+
+.cta-icon {
+  width: 22px;
+  height: 22px;
+}
+
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .traditions-section,
+  .achievements-section,
+  .heritage-cta {
+    padding: 4rem 1.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .heritage-hero {
     height: 50vh;
@@ -182,12 +421,29 @@
     padding: 3rem 1.5rem;
   }
 
-  .values-section {
+  .values-section,
+  .traditions-section,
+  .achievements-section,
+  .heritage-cta {
     padding: 3rem 1.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
   }
 
   .values-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .traditions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
   }
 
@@ -212,12 +468,25 @@
     padding: 2.5rem 1rem;
   }
 
-  .values-section {
+  .values-section,
+  .traditions-section,
+  .achievements-section,
+  .heritage-cta {
     padding: 2.5rem 1rem;
   }
 
-  .value-card {
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .value-card,
+  .tradition-card,
+  .achievement-card {
     padding: 2rem 1.5rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
   }
 
   .icon-wrapper {
@@ -238,5 +507,31 @@
   .value-icon {
     width: 30px;
     height: 30px;
+  }
+
+  .tradition-icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .tradition-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .achievement-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .achievement-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 2rem;
   }
 }
