@@ -102,27 +102,270 @@
   },
   "experience": {
     "title": "Our Experiences",
-    "safari": {
-      "title": "Nature Safari",
-      "description": "Explore local wildlife with our expert guides"
+    "subtitle": "Discover the Living Heritage of Burundi",
+    "description": "Immerse yourself in authentic experiences that connect you with nature, culture, and the warmth of Burundian hospitality.",
+    "hero": {
+      "title": "Authentic Experiences",
+      "description": "From cultural immersion to nature exploration, discover what makes Kwa Miganda unique."
     },
-    "hiking": {
-      "title": "Hiking",
-      "description": "Discover beautiful trails"
+    "categories": {
+      "cultural": {
+        "title": "Cultural Experiences",
+        "description": "Dive deep into Burundian traditions and heritage"
+      },
+      "nature": {
+        "title": "Nature & Adventure",
+        "description": "Explore the breathtaking landscapes of Mwaro"
+      },
+      "wellness": {
+        "title": "Wellness & Relaxation",
+        "description": "Rejuvenate your body and mind in harmony with nature"
+      },
+      "learning": {
+        "title": "Learning & Discovery",
+        "description": "Expand your knowledge through interactive experiences"
+      }
     },
-    "cultural": {
-      "title": "Cultural Activities",
-      "description": "Immerse yourself in local culture"
+    "activities": {
+      "traditionalMusic": {
+        "title": "Traditional Music & Dance",
+        "description": "Experience the rhythm of Burundi through traditional drumming, singing, and dance performances that tell stories of our ancestors.",
+        "duration": "2 hours",
+        "difficulty": "Easy",
+        "groupSize": "Up to 20 people"
+      },
+      "rugoVisit": {
+        "title": "Traditional Rugo Visit",
+        "description": "Step into the heart of Burundian rural life as you explore a traditional homestead, learning about ancestral architecture and daily rituals.",
+        "duration": "3 hours",
+        "difficulty": "Easy",
+        "groupSize": "Up to 15 people"
+      },
+      "natureWalks": {
+        "title": "Guided Nature Walks",
+        "description": "Discover the diverse flora and fauna of Mwaro's hills with expert local guides who share traditional ecological knowledge.",
+        "duration": "4-6 hours",
+        "difficulty": "Moderate",
+        "groupSize": "Up to 12 people"
+      },
+      "botanicalGarden": {
+        "title": "Medicinal Plants Garden",
+        "description": "Learn about traditional Burundian medicine as you explore our botanical garden featuring indigenous healing plants.",
+        "duration": "2 hours",
+        "difficulty": "Easy",
+        "groupSize": "Up to 20 people"
+      },
+      "cookingWorkshop": {
+        "title": "Traditional Cooking Workshop",
+        "description": "Join our chefs in preparing authentic Burundian dishes using local ingredients and traditional cooking methods.",
+        "duration": "3 hours",
+        "difficulty": "Easy",
+        "groupSize": "Up to 10 people"
+      },
+      "storytelling": {
+        "title": "Oral Storytelling Session",
+        "description": "Gather around the fire as elders share ancient tales, proverbs, and wisdom passed down through generations.",
+        "duration": "1.5 hours",
+        "difficulty": "Easy",
+        "groupSize": "Up to 25 people"
+      },
+      "birdwatching": {
+        "title": "Bird Watching Tour",
+        "description": "Observe over 200 species of birds in their natural habitat, including rare species found only in Burundi's highlands.",
+        "duration": "4 hours",
+        "difficulty": "Easy to Moderate",
+        "groupSize": "Up to 8 people"
+      },
+      "meditation": {
+        "title": "Mindfulness & Meditation",
+        "description": "Find inner peace through guided meditation sessions in serene natural settings overlooking the hills.",
+        "duration": "1 hour",
+        "difficulty": "Easy",
+        "groupSize": "Up to 15 people"
+      },
+      "craftWorkshop": {
+        "title": "Traditional Craft Workshop",
+        "description": "Learn ancestral crafts like basket weaving, pottery, or traditional jewelry making from skilled local artisans.",
+        "duration": "3 hours",
+        "difficulty": "Easy",
+        "groupSize": "Up to 8 people"
+      },
+      "sunriseYoga": {
+        "title": "Sunrise Yoga Session",
+        "description": "Start your day with yoga and meditation as the sun rises over Burundi's magnificent hills.",
+        "duration": "1.5 hours",
+        "difficulty": "Easy to Moderate",
+        "groupSize": "Up to 12 people"
+      },
+      "villageTour": {
+        "title": "Local Village Tour",
+        "description": "Visit neighboring communities to understand rural Burundian life, meet local families, and support community projects.",
+        "duration": "Half day",
+        "difficulty": "Easy",
+        "groupSize": "Up to 10 people"
+      },
+      "photography": {
+        "title": "Photography Workshop",
+        "description": "Capture the beauty of Burundi through guided photography sessions focusing on landscapes, culture, and wildlife.",
+        "duration": "4 hours",
+        "difficulty": "Easy",
+        "groupSize": "Up to 6 people"
+      }
+    },
+    "booking": {
+      "title": "Book Your Experience",
+      "description": "Ready to embark on your Burundian adventure? Choose from our curated experiences.",
+      "cta": "Book Now",
+      "contact": "Contact Us",
+      "note": "All experiences can be customized. Contact us for private groups or special requests."
+    },
+    "features": {
+      "expertGuides": {
+        "title": "Expert Local Guides",
+        "description": "Learn from knowledgeable guides who are passionate about sharing their culture and heritage."
+      },
+      "smallGroups": {
+        "title": "Small Group Sizes",
+        "description": "Intimate experiences ensure personalized attention and meaningful connections."
+      },
+      "sustainable": {
+        "title": "Sustainable Tourism",
+        "description": "All activities support local communities and environmental conservation."
+      },
+      "flexible": {
+        "title": "Flexible Scheduling",
+        "description": "Experiences can be arranged around your schedule and preferences."
+      }
     }
   },
   "lodge": {
     "title": "Our Lodge",
-    "description": "Discover our comfortable and authentic lodge, nestled in the heart of nature.",
-    "amenities": "Amenities",
+    "subtitle": "Authentic Comfort in the Heart of Nature",
+    "description": "Discover our comfortable and authentic lodge, nestled in the heart of nature. A perfect blend of modern comfort and traditional Burundian charm.",
+    "heroDescription": "Experience genuine hospitality in our eco-friendly lodge designed for ultimate comfort and cultural immersion.",
+    "amenities": "Amenities & Services",
+    "amenitiesSubtitle": "Everything you need for a perfect stay",
     "rooms": "Spacious rooms with panoramic views",
     "restaurant": "Gourmet restaurant",
     "pool": "Outdoor pool",
-    "spa": "Spa and wellness"
+    "spa": "Spa and wellness",
+    "sections": {
+      "rooms": {
+        "title": "Our Rooms",
+        "description": "Each of our carefully designed rooms offers stunning views of Burundi's lush hills and traditional Burundian decor.",
+        "standardRoom": {
+          "title": "Standard Room",
+          "description": "Comfortable room with private bathroom, hot water, and traditional décor",
+          "capacity": "2 guests",
+          "area": "25 m²"
+        },
+        "deluxeRoom": {
+          "title": "Deluxe Room",
+          "description": "Spacious room with king bed, panoramic windows, and traditional sitting area",
+          "capacity": "2-3 guests",
+          "area": "35 m²"
+        },
+        "suiteRoom": {
+          "title": "Suite",
+          "description": "Luxury suite with separate living area, premium amenities, and breathtaking views",
+          "capacity": "2-4 guests",
+          "area": "50 m²"
+        }
+      },
+      "dining": {
+        "title": "Dining Experience",
+        "description": "Our restaurant serves authentic Burundian and international cuisine prepared with fresh local ingredients.",
+        "breakfast": {
+          "title": "Breakfast",
+          "description": "Traditional and continental breakfast featuring local specialties"
+        },
+        "lunch": {
+          "title": "Lunch",
+          "description": "À la carte menu with traditional Burundian dishes and international options"
+        },
+        "dinner": {
+          "title": "Dinner",
+          "description": "Gourmet dinners showcasing the best of local and fusion cuisine"
+        },
+        "vegetarian": {
+          "title": "Vegetarian Options",
+          "description": "Full range of vegetarian and vegan dishes available on request"
+        }
+      },
+      "wellness": {
+        "title": "Wellness & Relaxation",
+        "description": "Rejuvenate your mind and body with our comprehensive wellness offerings.",
+        "spa": {
+          "title": "Traditional Spa",
+          "description": "Treatments inspired by traditional Burundian wellness practices"
+        },
+        "massage": {
+          "title": "Massage Therapy",
+          "description": "Professional massage treatments to relieve tension and stress"
+        },
+        "yoga": {
+          "title": "Yoga Classes",
+          "description": "Morning and sunset yoga sessions in serene natural settings"
+        },
+        "meditation": {
+          "title": "Meditation Sessions",
+          "description": "Guided meditation to find inner peace and mindfulness"
+        }
+      },
+      "activities": {
+        "title": "On-Site Activities",
+        "description": "Engage with nature and culture through our carefully curated activities.",
+        "hiking": {
+          "title": "Guided Hiking",
+          "description": "Explore the beautiful landscapes surrounding our lodge"
+        },
+        "bird": {
+          "title": "Bird Watching",
+          "description": "Observe over 200 species of birds in their natural habitat"
+        },
+        "cultural": {
+          "title": "Cultural Programs",
+          "description": "Interactive sessions with local guides and artisans"
+        },
+        "bonfire": {
+          "title": "Evening Bonfire",
+          "description": "Gather around the fire for stories, music, and stargazing"
+        }
+      }
+    },
+    "features": {
+      "authentication": {
+        "title": "Authentic Experience",
+        "description": "Built with traditional methods and modern comfort in mind"
+      },
+      "ecoFriendly": {
+        "title": "Eco-Friendly",
+        "description": "Sustainable practices committed to environmental preservation"
+      },
+      "localStaff": {
+        "title": "Local Staff",
+        "description": "Warm hospitality from knowledgeable community members"
+      },
+      "connectivity": {
+        "title": "Connectivity",
+        "description": "WiFi available in common areas for staying in touch"
+      },
+      "safety": {
+        "title": "Safe Environment",
+        "description": "24/7 security and medical facilities on premises"
+      },
+      "parking": {
+        "title": "Free Parking",
+        "description": "Secure parking facilities for all guests"
+      }
+    },
+    "booking": {
+      "title": "Book Your Stay",
+      "description": "Ready for an unforgettable experience? Reserve your room today.",
+      "cta": "Reserve Now",
+      "contact": "Contact Us",
+      "note": "Best rates guaranteed. Contact us directly for group bookings and special packages."
+    }
   },
   "heritage": {
     "title": "Our Heritage",

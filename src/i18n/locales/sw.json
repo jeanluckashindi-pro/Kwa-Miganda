@@ -102,27 +102,270 @@
   },
   "experience": {
     "title": "Uzoefu Wetu",
-    "safari": {
-      "title": "Safari ya Asili",
-      "description": "Chunguza wanyama wa eneo hili na waongozaji wetu wataalam"
+    "subtitle": "Gundua Urithi Hai wa Burundi",
+    "description": "Jizamisha katika uzoefu wa asili zinazokuunganisha na asili, utamaduni, na joto la ukarimu wa Kiburundi.",
+    "hero": {
+      "title": "Uzoefu wa Asili",
+      "description": "Kutoka kwa kujizamisha katika utamaduni hadi kuchunguza asili, gundua kinachofanya Kwa Miganda kuwa ya kipekee."
     },
-    "hiking": {
-      "title": "Kutembea Milimani",
-      "description": "Gundua njia nzuri"
+    "categories": {
+      "cultural": {
+        "title": "Uzoefu wa Kitamaduni",
+        "description": "Piga mbizi katika mila na urithi wa Kiburundi"
+      },
+      "nature": {
+        "title": "Asili & Matembezi",
+        "description": "Chunguza mandhari ya kupendeza ya Mwaro"
+      },
+      "wellness": {
+        "title": "Afya & Utulivu",
+        "description": "Rejesha mwili na akili yako katika maelewano na asili"
+      },
+      "learning": {
+        "title": "Kujifunza & Kugundua",
+        "description": "Panua maarifa yako kupitia uzoefu wa kuingiliana"
+      }
     },
-    "cultural": {
-      "title": "Shughuli za Kitamaduni",
-      "description": "Jizamisha katika utamaduni wa ndani"
+    "activities": {
+      "traditionalMusic": {
+        "title": "Muziki wa Kitamaduni & Ngoma",
+        "description": "Jionea mdundo wa Burundi kupitia maonyesho ya kupiga ngoma, kuimba, na kucheza ngoma za kitamaduni zinazosimulia hadithi za baba zetu.",
+        "duration": "Saa 2",
+        "difficulty": "Rahisi",
+        "groupSize": "Hadi watu 20"
+      },
+      "rugoVisit": {
+        "title": "Ziara ya Rugo ya Kitamaduni",
+        "description": "Ingia katikati ya maisha ya vijijini ya Kiburundi unapochunguza makazi ya kitamaduni, kujifunza usanifu wa baba zetu na mila za kila siku.",
+        "duration": "Saa 3",
+        "difficulty": "Rahisi",
+        "groupSize": "Hadi watu 15"
+      },
+      "natureWalks": {
+        "title": "Matembezi ya Kuongozwa ya Asili",
+        "description": "Gundua mimea na wanyama mbalimbali wa milima ya Mwaro na waongozaji wataalam wa ndani wanaoshiriki maarifa ya ikolojia ya kitamaduni.",
+        "duration": "Saa 4-6",
+        "difficulty": "Wastani",
+        "groupSize": "Hadi watu 12"
+      },
+      "botanicalGarden": {
+        "title": "Bustani ya Mimea ya Dawa",
+        "description": "Jifunze dawa ya kitamaduni ya Kiburundi unapochunguza bustani yetu ya mimea inayojumuisha mimea ya tiba ya ndani.",
+        "duration": "Saa 2",
+        "difficulty": "Rahisi",
+        "groupSize": "Hadi watu 20"
+      },
+      "cookingWorkshop": {
+        "title": "Warsha ya Kupika Kitamaduni",
+        "description": "Jiunge na wapishi wetu katika kupika vyakula vya asili vya Kiburundi kwa kutumia viungo vya ndani na njia za kupika za kitamaduni.",
+        "duration": "Saa 3",
+        "difficulty": "Rahisi",
+        "groupSize": "Hadi watu 10"
+      },
+      "storytelling": {
+        "title": "Kikao cha Masimulizi ya Mdomo",
+        "description": "Kusanyika karibu na moto wakati wazee wanashiriki hadithi za zamani, methali, na hekima zilizopitishwa kwa vizazi.",
+        "duration": "Saa 1.5",
+        "difficulty": "Rahisi",
+        "groupSize": "Hadi watu 25"
+      },
+      "birdwatching": {
+        "title": "Ziara ya Kutazama Ndege",
+        "description": "Tazama zaidi ya spishi 200 za ndege katika makazi yao ya asili, ikiwa ni pamoja na spishi adimu zinazopatikana tu katika nyanda za juu za Burundi.",
+        "duration": "Saa 4",
+        "difficulty": "Rahisi hadi Wastani",
+        "groupSize": "Hadi watu 8"
+      },
+      "meditation": {
+        "title": "Ufafanuzi & Kutafakari",
+        "description": "Pata amani ya ndani kupitia vikao vya kutafakari vya kuongozwa katika mipangilio ya asili yenye utulivu inayoangalia milima.",
+        "duration": "Saa 1",
+        "difficulty": "Rahisi",
+        "groupSize": "Hadi watu 15"
+      },
+      "craftWorkshop": {
+        "title": "Warsha ya Ufundi wa Kitamaduni",
+        "description": "Jifunze ufundi wa baba zetu kama kufuma vikapu, ufinyanzi, au kutengeneza vito vya kitamaduni kutoka kwa mafundi wataalam wa ndani.",
+        "duration": "Saa 3",
+        "difficulty": "Rahisi",
+        "groupSize": "Hadi watu 8"
+      },
+      "sunriseYoga": {
+        "title": "Kikao cha Yoga cha Kuchomoza Jua",
+        "description": "Anza siku yako na yoga na kutafakari jua linapochomoza juu ya milima ya kupendeza ya Burundi.",
+        "duration": "Saa 1.5",
+        "difficulty": "Rahisi hadi Wastani",
+        "groupSize": "Hadi watu 12"
+      },
+      "villageTour": {
+        "title": "Ziara ya Kijiji cha Ndani",
+        "description": "Tembelea jumuiya za jirani ili kuelewa maisha ya vijijini ya Kiburundi, kukutana na familia za ndani, na kuunga mkono miradi ya jumuiya.",
+        "duration": "Nusu siku",
+        "difficulty": "Rahisi",
+        "groupSize": "Hadi watu 10"
+      },
+      "photography": {
+        "title": "Warsha ya Upigaji Picha",
+        "description": "Piga uzuri wa Burundi kupitia vikao vya upigaji picha vya kuongozwa vinavyolenga mandhari, utamaduni, na wanyamapori.",
+        "duration": "Saa 4",
+        "difficulty": "Rahisi",
+        "groupSize": "Hadi watu 6"
+      }
+    },
+    "booking": {
+      "title": "Tafuta Uzoefu Wako",
+      "description": "Uko tayari kuanza safari yako ya Kiburundi? Chagua kutoka kwa uzoefu wetu uliochaguliwa.",
+      "cta": "Tafuta Sasa",
+      "contact": "Wasiliana Nasi",
+      "note": "Uzoefu wote unaweza kubinafsishwa. Wasiliana nasi kwa vikundi binafsi au maombi maalum."
+    },
+    "features": {
+      "expertGuides": {
+        "title": "Waongozaji Wataalam wa Ndani",
+        "description": "Jifunze kutoka kwa waongozaji wenye ujuzi ambao wanapenda kushiriki utamaduni na urithi wao."
+      },
+      "smallGroups": {
+        "title": "Ukubwa Mdogo wa Vikundi",
+        "description": "Uzoefu wa karibu huhakikisha uangalizi wa kibinafsi na uhusiano wa maana."
+      },
+      "sustainable": {
+        "title": "Utalii Endelevu",
+        "description": "Shughuli zote zinaunga mkono jumuiya za ndani na uhifadhi wa mazingira."
+      },
+      "flexible": {
+        "title": "Ratiba Rahisi Kubadilika",
+        "description": "Uzoefu unaweza kupangwa kulingana na ratiba yako na mapendeleo."
+      }
     }
   },
   "lodge": {
     "title": "Lodge Yetu",
-    "description": "Gundua lodge yetu ya starehe na ya asili, iliyoko katikati ya asili.",
-    "amenities": "Vifaa",
+    "subtitle": "Raha Asilia katikati ya Asili",
+    "description": "Gundua lodge yetu ya starehe na ya asili, iliyoko katikati ya asili. Mchanganyiko kamili wa raha ya kisasa na uvumilivu wa Kiburundi wa kitamaduni.",
+    "heroDescription": "Jionea ukarimu halisi katika lodge yetu ya kiajabu inayoandaliwa kwa raha kamili na ujumuishaji wa kitamaduni.",
+    "amenities": "Vifaa & Huduma",
+    "amenitiesSubtitle": "Kila kitu unachohitaji kwa kukaa nzuri",
     "rooms": "Vyumba vikubwa na mandhari nzuri",
     "restaurant": "Mkahawa wa kifahari",
     "pool": "Bwawa la nje",
-    "spa": "Spa na afya"
+    "spa": "Spa na afya",
+    "sections": {
+      "rooms": {
+        "title": "Vyumba Vyetu",
+        "description": "Kila kimoja cha vyumba vyetu vilivyoandaliwa kwa utaalamu vina mandhari mageni ya milima ya kupendeza ya Burundi na utando wa kitamaduni wa Kiburundi.",
+        "standardRoom": {
+          "title": "Kawaida Chumba",
+          "description": "Chumba chenye starehe na choo binafsi, maji moto na utando wa kitamaduni",
+          "capacity": "Wageni 2",
+          "area": "25 m²"
+        },
+        "deluxeRoom": {
+          "title": "Deluxe Chumba",
+          "description": "Chumba kikubwa na kitanda cha kifalme, madirisha ya mandhari na mahali pa kukaa ya kitamaduni",
+          "capacity": "Wageni 2-3",
+          "area": "35 m²"
+        },
+        "suiteRoom": {
+          "title": "Switi",
+          "description": "Switi ya kifahari na eneo la kukaa tofauti, vifaa vya kiwango cha juu na mandhari ya ajabu",
+          "capacity": "Wageni 2-4",
+          "area": "50 m²"
+        }
+      },
+      "dining": {
+        "title": "Asilia ya Kula",
+        "description": "Mkahawa wetu hutumikia kula halisi ya Kiburundi na kimataifa iliyoandaliwa na viungo safi vya ndani.",
+        "breakfast": {
+          "title": "Jioni",
+          "description": "Jioni la kawaida na la kimataifa kuonyesha matatizo ya ndani"
+        },
+        "lunch": {
+          "title": "Mchana",
+          "description": "MenU ya kuagiza nayeye kula halisi ya Kiburundi na chaguo la kimataifa"
+        },
+        "dinner": {
+          "title": "Jioni",
+          "description": "Kula za kifahari zinazoonyesha bora zaidi ya kula ya ndani na mchanganyiko"
+        },
+        "vegetarian": {
+          "title": "Chaguo la Mimea",
+          "description": "Kula nzima ya mimea na mimea ya kula vivyo hivyo inayopatikana kwa ombi"
+        }
+      },
+      "wellness": {
+        "title": "Afya & Utulivu",
+        "description": "Jisanishe akili na mwili yako na vifaa vyetu vya afya kamili.",
+        "spa": {
+          "title": "Spa ya Kitamaduni",
+          "description": "Huduma zilizoinspiriwa na mbinu za afya za kitamaduni za Kiburundi"
+        },
+        "massage": {
+          "title": "Therapy ya Mrugi",
+          "description": "Huduma za kitaalam za mrugi za kuondoa mafadhaiko na matatizo"
+        },
+        "yoga": {
+          "title": "Masomo ya Yoga",
+          "description": "Masomo ya asubuhi na jua linapouzwa mahali mapema"
+        },
+        "meditation": {
+          "title": "Vikao vya Kutafakari",
+          "description": "Kutafakari kinachongozwa kupata amani ndani na njema"
+        }
+      },
+      "activities": {
+        "title": "Shughuli za Mahali pa Pafu",
+        "description": "Shiriki asili na utamaduni kupitia shughuli zetu zilizochagiwa kwa utaalamu.",
+        "hiking": {
+          "title": "Kutembea Kwa Kuongozwa",
+          "description": "Chunguza mandhari mageni kuonyesha lodge yetu"
+        },
+        "bird": {
+          "title": "Kutazama Ndege",
+          "description": "Tazama aina zaidi ya 200 za ndege katika kituo chao cha asili"
+        },
+        "cultural": {
+          "title": "Programu za Kitamaduni",
+          "description": "Vikao vya kuingiliana na waongozaji wa ndani na wasanii"
+        },
+        "bonfire": {
+          "title": "Moto wa Jioni",
+          "description": "Kusanyika karibu na moto kwa ajili ya hadithi, muziki na kupigia kamata nyota"
+        }
+      }
+    },
+    "features": {
+      "authentication": {
+        "title": "Asilia ya Asili",
+        "description": "Jamii na mbinu za jadi na raha ya kisasa katika akili"
+      },
+      "ecoFriendly": {
+        "title": "Rafiki wa Mazingira",
+        "description": "Mbinu endelevu zinazohitaji hifadhi ya mazingira"
+      },
+      "localStaff": {
+        "title": "Wafanyakazi wa Ndani",
+        "description": "Ukarimu moto kutoka kwa wanachama wenye ujuzi wa jamii"
+      },
+      "connectivity": {
+        "title": "Uhusiano",
+        "description": "WiFi inayopatikana katika ngazi za kawaida ili kubaki wazi"
+      },
+      "safety": {
+        "title": "Mahali Salama",
+        "description": "Usalama wa saa 24/7 na njukuzi za kimatibabu mahali pafu"
+      },
+      "parking": {
+        "title": "Kueneza Bure",
+        "description": "Miundombinu salama ya kueneza kwa wageni wote"
+      }
+    },
+    "booking": {
+      "title": "Tafuta Kukaa Kwako",
+      "description": "Uko tayari kwa uzoefu usiotaliwa? Hifadhi chumba chako leo.",
+      "cta": "Hifadhi Sasa",
+      "contact": "Wasiliana Nasi",
+      "note": "Bei za juu zaidi zinazohitaji kuanishwa. Wasiliana nasi moja kwa moja kwa vikundi vikubwa na pakiti maalum."
+    }
   },
   "heritage": {
     "title": "Urithi Wetu",

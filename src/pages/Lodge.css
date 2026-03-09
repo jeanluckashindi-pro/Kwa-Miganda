@@ -1,39 +1,684 @@
-.lodge {
-  padding: 2rem;
+/* Lodge Page Styles */
+.lodge-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+/* Hero Section */
+.lodge-hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+  color: white;
+}
+
+.hero-content {
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+.hero-description {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  max-width: 600px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(139, 69, 19, 0.8), rgba(160, 82, 45, 0.8));
+  z-index: 1;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Intro Section */
+.intro-section {
+  padding: 4rem 0;
+  background: white;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.intro-text h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #2c3e50;
+  line-height: 1.6;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-.lodge h1 {
+/* Section Headers */
+.section-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
-.lodge-content {
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-.amenities {
-  margin-top: 2rem;
-}
-
-.amenities ul {
-  list-style: none;
-  padding: 0;
-}
-
-.amenities li {
-  padding: 0.5rem 0;
-  padding-left: 1.5rem;
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
   position: relative;
 }
 
-.amenities li:before {
-  content: "✓";
+.section-title::after {
+  content: '';
   position: absolute;
-  left: 0;
-  color: #27ae60;
-  font-weight: bold;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(45deg, #8B4513, #A0522D);
+  border-radius: 2px;
+}
+
+.section-description {
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  color: #7f8c8d;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Rooms Section */
+.rooms-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.room-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.room-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+  border-color: var(--room-color);
+}
+
+.room-card::before {
+  content: '';
+  height: 4px;
+  background: var(--room-color);
+}
+
+.room-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 2rem auto 0;
+  background: linear-gradient(135deg, var(--room-color), rgba(255, 255, 255, 0.1));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.room-icon {
+  width: 32px;
+  height: 32px;
+  color: white;
+  stroke-width: 2;
+}
+
+.room-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 1.5rem 1.5rem 0.75rem;
+  text-align: center;
+}
+
+.room-description {
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 1.5rem;
+  flex-grow: 1;
+}
+
+.room-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  margin-top: 1rem;
+}
+
+.room-details .detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.room-details .detail-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--room-color);
+  flex-shrink: 0;
+}
+
+/* Dining Section */
+.dining-section {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+/* Wellness Section */
+.wellness-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+/* Activities Section */
+.activities-section {
+  padding: 5rem 0;
+  background: #f8f9fa;
+}
+
+/* Amenities Grid */
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.amenity-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.amenity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.dining-card {
+  border-top: 3px solid #FF8C42;
+}
+
+.dining-card:hover {
+  border-top-color: transparent;
+}
+
+.wellness-card {
+  border-top: 3px solid #E91E63;
+}
+
+.wellness-card:hover {
+  border-top-color: transparent;
+}
+
+.activities-card {
+  border-top: 3px solid #4CAF50;
+}
+
+.activities-card:hover {
+  border-top-color: transparent;
+}
+
+.amenity-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dining-icon {
+  background: linear-gradient(135deg, #FF8C42, #FF9E6C);
+}
+
+.wellness-icon {
+  background: linear-gradient(135deg, #E91E63, #F06292);
+}
+
+.activities-icon {
+  background: linear-gradient(135deg, #4CAF50, #66BB6A);
+}
+
+.amenity-icon {
+  width: 28px;
+  height: 28px;
+  color: white;
+  stroke-width: 2;
+}
+
+.amenity-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+}
+
+.amenity-description {
+  font-size: 0.9rem;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+/* Features Section */
+.features-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.feature-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.feature-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  background: linear-gradient(135deg, #8B4513, #A0522D);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.2);
+}
+
+.feature-icon {
+  width: 24px;
+  height: 24px;
+  color: white;
+  stroke-width: 2;
+}
+
+.feature-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.feature-description {
+  font-size: 0.85rem;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+/* Booking Section */
+.booking-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+  color: white;
+}
+
+.booking-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.booking-text {
+  max-width: 500px;
+}
+
+.booking-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.booking-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.booking-note {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.booking-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  min-width: 200px;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: white;
+  color: #8B4513;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  background: #f8f9fa;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: #8B4513;
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .rooms-grid,
+  .amenities-grid,
+  .features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .booking-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .booking-actions {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .lodge-hero {
+    min-height: 45vh;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .rooms-section,
+  .dining-section,
+  .wellness-section,
+  .activities-section,
+  .features-section,
+  .booking-section,
+  .intro-section {
+    padding: 3rem 0;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .rooms-grid,
+  .amenities-grid,
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .room-card,
+  .amenity-card,
+  .feature-item {
+    padding: 1.5rem;
+  }
+
+  .booking-content {
+    text-align: center;
+  }
+
+  .booking-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lodge-hero {
+    min-height: 40vh;
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .room-icon-wrapper,
+  .amenity-icon-wrapper,
+  .feature-icon-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .room-icon,
+  .amenity-icon,
+  .feature-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .room-title,
+  .amenity-title {
+    font-size: 1rem;
+  }
+
+  .intro-section,
+  .rooms-section,
+  .dining-section,
+  .wellness-section,
+  .activities-section,
+  .features-section,
+  .booking-section {
+    padding: 2rem 0;
+  }
+
+  .booking-title {
+    font-size: 1.5rem;
+  }
+
+  .intro-text h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.room-card,
+.amenity-card,
+.feature-item {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.room-card:nth-child(1) { animation-delay: 0.1s; }
+.room-card:nth-child(2) { animation-delay: 0.2s; }
+.room-card:nth-child(3) { animation-delay: 0.3s; }
+
+.amenity-card:nth-child(odd) { animation-delay: 0.1s; }
+.amenity-card:nth-child(even) { animation-delay: 0.2s; }
+
+.feature-item:nth-child(1) { animation-delay: 0.1s; }
+.feature-item:nth-child(2) { animation-delay: 0.15s; }
+.feature-item:nth-child(3) { animation-delay: 0.2s; }
+.feature-item:nth-child(4) { animation-delay: 0.25s; }
+.feature-item:nth-child(5) { animation-delay: 0.3s; }
+.feature-item:nth-child(6) { animation-delay: 0.35s; }
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .room-card,
+  .amenity-card,
+  .feature-item,
+  .btn-primary,
+  .btn-secondary,
+  .room-card:hover,
+  .amenity-card:hover,
+  .feature-item:hover {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+}
+
+/* Focus states */
+.btn-primary:focus,
+.btn-secondary:focus {
+  outline: 2px solid #8B4513;
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .lodge-page {
+    background: white;
+  }
+
+  .lodge-hero,
+  .booking-section {
+    background: white !important;
+    color: black !important;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    display: none;
+  }
 }

@@ -102,27 +102,270 @@
   },
   "experience": {
     "title": "Ubunararibonye Bwacu",
-    "safari": {
-      "title": "Safari y'Ubwiza bw'Isi",
-      "description": "Vumbura inyamaswa z'aha hantu hamwe n'abayobozi bacu b'inzobere"
+    "subtitle": "Vumbura Umurage Uzima wa Burundi",
+    "description": "Winjire mu bunararibonye bw'ukuri buguhuza n'ubwiza bw'isi, umuco, n'ubushobozi bw'ubukirisitu bwa Burundi.",
+    "hero": {
+      "title": "Ubunararibonye bw'Ukuri",
+      "description": "Uva ku winjira mu muco gushika ku vumbura ubwiza bw'isi, vumbura ico gituma Kwa Miganda ihambaye."
     },
-    "hiking": {
-      "title": "Kugenda mu Misozi",
-      "description": "Vumbura inzira nziza"
+    "categories": {
+      "cultural": {
+        "title": "Ubunararibonye bw'Umuco",
+        "description": "Winjira mu mvo n'umwidondoro wa Burundi"
+      },
+      "nature": {
+        "title": "Ubwiza bw'Isi & Ubunararibonye",
+        "description": "Vumbura ubwiza bw'isi bwa Mwaro"
+      },
+      "wellness": {
+        "title": "Amahora & Kuruhuka",
+        "description": "Subira imbaraga mu mubiri no mu mutwe mu mahoro n'ubwiza bw'isi"
+      },
+      "learning": {
+        "title": "Kwiga & Kuvumbura",
+        "description": "Ongereza ubumenyi bwawe kubwa ubunararibonye bukora"
+      }
     },
-    "cultural": {
-      "title": "Ibikorwa vy'Umuco",
-      "description": "Winjire mu muco w'aha hantu"
+    "activities": {
+      "traditionalMusic": {
+        "title": "Umuziki n'Imyidagaduro ya Kera",
+        "description": "Vumbura umurika wa Burundi kubwa imbyino, indirimbo n'immyidagaduro ya kera zivuga inkuru z'abakurambere bacu.",
+        "duration": "Amasaha 2",
+        "difficulty": "Biroroshye",
+        "groupSize": "Gushika ku bantu 20"
+      },
+      "rugoVisit": {
+        "title": "Kugendera Rugo ya Kera",
+        "description": "Injira mu mutima w'ubuzima bwa Burundi bw'icyaro uko uvumbura urugo rwa kera, wigira ibikorwa vya kera n'imigenzo y'umusi ku musi.",
+        "duration": "Amasaha 3",
+        "difficulty": "Biroroshye",
+        "groupSize": "Gushika ku bantu 15"
+      },
+      "natureWalks": {
+        "title": "Kugenda mu Bwiza bw'Isi",
+        "description": "Vumbura ibimera n'inyamaswa vyinshi vya misozi ya Mwaro hamwe n'abayobozi b'inzobere bo hantu batanga ubumenyi bw'ubwiza bw'isi bwa kera.",
+        "duration": "Amasaha 4-6",
+        "difficulty": "Bikomeye gato",
+        "groupSize": "Gushika ku bantu 12"
+      },
+      "botanicalGarden": {
+        "title": "Urwuri rw'Ibimera vy'Ubuvuzi",
+        "description": "Iga ubuvuzi bwa Burundi bwa kera uko uvumbura urwuri rwacu rw'ibimera vy'ubuvuzi vy'ahantu.",
+        "duration": "Amasaha 2",
+        "difficulty": "Biroroshye",
+        "groupSize": "Gushika ku bantu 20"
+      },
+      "cookingWorkshop": {
+        "title": "Inama yo Guteka Ibiryo vya Kera",
+        "description": "Jana abapfumu bacu mu guteka ibiryo vy'ukuri vya Burundi bikoresha ibikoresho vy'ahantu n'imigenzo ya kera.",
+        "duration": "Amasaha 3",
+        "difficulty": "Biroroshye",
+        "groupSize": "Gushika ku bantu 10"
+      },
+      "storytelling": {
+        "title": "Inama y'Inkuru za Kera",
+        "description": "Teranira ku muriro abakurambere bakabandanya inkuru za kera, imigani n'ubwenge bwatanzwe kuva mu bihe bishize.",
+        "duration": "Isaha 1.5",
+        "difficulty": "Biroroshye",
+        "groupSize": "Gushika ku bantu 25"
+      },
+      "birdwatching": {
+        "title": "Urugendo rwo Kubona Inyoni",
+        "description": "Raba ibisiga birenga 200 mu bwiza bw'isi bwazo, harimwo ibisiga bigaragara gusa mu misozi ya Burundi.",
+        "duration": "Amasaha 4",
+        "difficulty": "Biroroshye kugera bikomeye",
+        "groupSize": "Gushika ku bantu 8"
+      },
+      "meditation": {
+        "title": "Gusenga & Gufata Igitondo",
+        "description": "Rondera amahoro yo mu mutwe kubwa gusenga kw'ubuyobozi mu mahanga meza araba misozi.",
+        "duration": "Isaha 1",
+        "difficulty": "Biroroshye",
+        "groupSize": "Gushika ku bantu 15"
+      },
+      "craftWorkshop": {
+        "title": "Inama y'Ubuhinzi bwa Kera",
+        "description": "Iga ubuhinzi bwa kera nk'ugupfuka agasandugu, ububumbyi canke ugukora ivyuma vya kera kubwa abahinzi b'inzobere bo hantu.",
+        "duration": "Amasaha 3",
+        "difficulty": "Biroroshye",
+        "groupSize": "Gushika ku bantu 8"
+      },
+      "sunriseYoga": {
+        "title": "Inama ya Yoga ku Izuba Rirashe",
+        "description": "Tangura umusi wawe na yoga no gusenga izuba rirashe hejuru y'imisozi myiza ya Burundi.",
+        "duration": "Isaha 1.5",
+        "difficulty": "Biroroshye kugera bikomeye",
+        "groupSize": "Gushika ku bantu 12"
+      },
+      "villageTour": {
+        "title": "Urugendo mu Mudugudu wa Hafi",
+        "description": "Rengera imigwi iri hafi kugira ngo umenye ubuzima bwa Burundi bw'icyaro, uhure n'imiryango yo hantu, ufase imishinga y'imigwi.",
+        "duration": "Igitondo",
+        "difficulty": "Biroroshye",
+        "groupSize": "Gushika ku bantu 10"
+      },
+      "photography": {
+        "title": "Inama y'Ifoto",
+        "description": "Fata ubwiza bwa Burundi kubwa inama z'ifoto z'ubuyobozi zibanda ku bwiza bw'isi, umuco n'inyamaswa.",
+        "duration": "Amasaha 4",
+        "difficulty": "Biroroshye",
+        "groupSize": "Gushika ku bantu 6"
+      }
+    },
+    "booking": {
+      "title": "Fata Ubunararibonye Bwawe",
+      "description": "Witeguye gutangura urugendo rwawe rwa Burundi? Hitamwo mu bunararibonye bwacu bwasuwe.",
+      "cta": "Fata Nonaha",
+      "contact": "Twandikire",
+      "note": "Ubunarararibonye bwose burashobora guhindurwa. Twandikire ku migwi yihariye canke ibisabwa bidasanzwe."
+    },
+    "features": {
+      "expertGuides": {
+        "title": "Abayobozi b'Inzobere bo Hantu",
+        "description": "Iga kubwa abayobozi b'inzobere bakunda gutanga umuco wabo n'umwidondoro wabo."
+      },
+      "smallGroups": {
+        "title": "Imigwi Mito",
+        "description": "Ubunararibonye bw'ibanga burahinga ubwitonzi bw'umwihariko n'amakomezi afise akamaro."
+      },
+      "sustainable": {
+        "title": "Urugendo Ruhoraho",
+        "description": "Ibikorwa vyose bifasha imigwi yo hantu n'urwubatsi rw'ibidukikije."
+      },
+      "flexible": {
+        "title": "Igihe Gishobora Guhindurwa",
+        "description": "Ubunararibonye burashobora gutunganywa ku gihe cawe n'ibyo ukunda."
+      }
     }
   },
   "lodge": {
     "title": "Lodge Yacu",
-    "description": "Vumbura lodge yacu yoroshye kandi y'ukuri, iri mu mutima w'ubwiza bw'isi.",
-    "amenities": "Ibikoresho",
+    "subtitle": "Ubwiyunge bw'Ukuri mu Mutima w'Ubwiza bw'Isi",
+    "description": "Vumbura lodge yacu yoroshye kandi y'ukuri, iri mu mutima w'ubwiza bw'isi. Guhataniza bwiza ibikorwa vy'ubu n'ubwiyunge bw'umuco wa Burundi.",
+    "heroDescription": "Jya mu bukirisitu bw'ukuri mu lodge yacu y'ibidukikije yakozwe ku mahora meza n'kwinjira mu muco.",
+    "amenities": "Ibikoresho & Serivisi",
+    "amenitiesSubtitle": "Ikivyo cyose ukeneye ku mahoro meza",
     "rooms": "Ibyumba binini bifise amashusho meza",
     "restaurant": "Resitora nziza",
     "pool": "Pisine yo hanze",
-    "spa": "Spa n'ubuzima"
+    "spa": "Spa n'ubuzima",
+    "sections": {
+      "rooms": {
+        "title": "Ibyumba Byacu",
+        "description": "Buri kimwe mu byumba vyacu vya neza birahanga amashusho meza ya misozi y'ubwiza bwa Burundi n'ikizira kya Burundi kya kera.",
+        "standardRoom": {
+          "title": "Icyumba Kinini",
+          "description": "Icyumba kinini bifise salle d'eau yihariye, amazi moto n'ikizira kya kera",
+          "capacity": "Bantu 2",
+          "area": "25 m²"
+        },
+        "deluxeRoom": {
+          "title": "Icyumba Cyiza",
+          "description": "Icyumba kinini bifise ubwoko bwa mpande hamwe n'idirishya za mbere kandi n'ishusho rihoraho",
+          "capacity": "Bantu 2-3",
+          "area": "35 m²"
+        },
+        "suiteRoom": {
+          "title": "Intara",
+          "description": "Intara yasezerano ifise icyumba cya mbere, ibikoresho vyiza n'amashusho meza",
+          "capacity": "Bantu 2-4",
+          "area": "50 m²"
+        }
+      },
+      "dining": {
+        "title": "Ubwiyunge bw'Ibikoresho byo Kurya",
+        "description": "Resitora yacu itanga kumera kwa Burundi kwa kera kandi ky'iby'amahanga vyakorehanwa na mbere z'aha hantu.",
+        "breakfast": {
+          "title": "Ku Gitondo",
+          "description": "Ibikoresho by'umusi n'iby'isilikiti bifise igice cy'aha hantu"
+        },
+        "lunch": {
+          "title": "Mu Gitondo",
+          "description": "Murabure w'ibintu bifise kumera kwa Burundi n'iby'amahanga"
+        },
+        "dinner": {
+          "title": "Mu Mahoro",
+          "description": "Maboro meza y'ubwiza bw'umuco n'ibikoresho bya hamwe"
+        },
+        "vegetarian": {
+          "title": "Ibikoresho vy'Ibimera",
+          "description": "Uburinzi bw'ibimera n'ibikoresho vy'iby'omugayo bivuguruza ku basaba"
+        }
+      },
+      "wellness": {
+        "title": "Ubuzima & Kuruhuka",
+        "description": "Subira imbaraga mu mubiri n'umutwe hamwe n'ubwiza bwacu bw'ubuzima.",
+        "spa": {
+          "title": "Spa ya Kera",
+          "description": "Ibikorwa bifise ubwiza bw'ubuzima bwa kera bwa Burundi"
+        },
+        "massage": {
+          "title": "Gusuuza",
+          "description": "Ibikorwa by'inzobere vyakoza ku buruhuko n'ibintu bikomeye"
+        },
+        "yoga": {
+          "title": "Inzira z'Yoga",
+          "description": "Inzira z'umusi n'z'izuba rirashe mu mahanga meza"
+        },
+        "meditation": {
+          "title": "Inama z'Gusenga",
+          "description": "Gusenga kw'ubuyobozi kugira ngo rondera amahoro n'ubwenge"
+        }
+      },
+      "activities": {
+        "title": "Ibikorwa Aha Hantu",
+        "description": "Gakora hamwe n'ubwiza bw'isi n'umuco kubwa ibikorwa byacu vidahaze.",
+        "hiking": {
+          "title": "Kugenda mu Bwiza bw'Isi",
+          "description": "Vumbura ubwiza bw'isi bukinzira lodge yacu"
+        },
+        "bird": {
+          "title": "Gutemera Inyoni",
+          "description": "Raba inyoni zirenga 200 mu bwiza bw'isi bwazo"
+        },
+        "cultural": {
+          "title": "Inama z'Umuco",
+          "description": "Inama z'ubwiyunge hamwe n'abayobozi bo hantu n'abahinzi"
+        },
+        "bonfire": {
+          "title": "Umuriro w'Mahoro",
+          "description": "Kubutanya ku muriro kugira ngo uhure n'inkuru, umuziki, n'incuti z'iyezi"
+        }
+      }
+    },
+    "features": {
+      "authentication": {
+        "title": "Ubunararibonye bw'Ukuri",
+        "description": "Byakozwe habwa imigenzo ya kera n'ubwiyunge bw'ubu"
+      },
+      "ecoFriendly": {
+        "title": "Eco-Friendly",
+        "description": "Ibikorwa bihoraho byiyemeje kubangamira ibidukikije"
+      },
+      "localStaff": {
+        "title": "Abakozi bo Hantu",
+        "description": "Ubwiyunge bw'ubushobozi n'ubumenyi bwacu bw'imidugudu"
+      },
+      "connectivity": {
+        "title": "Guhuza",
+        "description": "WiFi ivugwa mu mahanga makora kubona ubuhuza"
+      },
+      "safety": {
+        "title": "Mahanga Mariho",
+        "description": "Umutekano wa 24/7 n'inzira z'ubuvuzi aha hantu"
+      },
+      "parking": {
+        "title": "Parking yihariye",
+        "description": "Ivugi ry'ibinyabizamakwibwa ryihariye kuri aho hantu"
+      }
+    },
+    "booking": {
+      "title": "Fata Icyumba Cyawe",
+      "description": "Witeguye kubunararibonye budatanzagura ? Fata icyumba nonaha.",
+      "cta": "Fata Nonaha",
+      "contact": "Twandikire",
+      "note": "Imiterere y'inzira igupeshwe. Twandikire kugira ngo hafate inzira z'imigwi n'ifasha z'ibuze."
+    }
   },
   "heritage": {
     "title": "Umurage Wacu",
