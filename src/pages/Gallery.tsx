@@ -6,11 +6,16 @@ import './Gallery.css';
 export default function Gallery() {
   const { t } = useTranslation();
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
   
   const images = [
     '/2.jpg', '/3.jpg', '/4.jpg', '/5.jpg', '/6.jpg',
     '/7.jpg', '/8.jpg', '/9.jpg', '/10.jpg', '/11.jpg', '/12.jpg'
   ];
+
+  const handleImageLoad = (index: number) => {
+    setLoadedImages(prev => new Set(prev).add(index));
+  };
 
   const openLightbox = (index: number) => {
     setSelectedImage(index);
@@ -64,10 +69,23 @@ export default function Gallery() {
                 className="gallery-item"
                 onClick={() => openLightbox(index)}
               >
-                <img src={img} alt={`Gallery ${index + 1}`} loading="lazy" />
-                <div className="gallery-overlay">
-                  <span className="view-text">View Full Size</span>
-                </div>
+                {!loadedImages.has(index) && (
+                  <div className="image-skeleton">
+                    <div className="skeleton-shimmer"></div>
+                  </div>
+                )}
+                <img 
+                  src={img} 
+                  alt={`Gallery ${index + 1}`} 
+                  loading="lazy"
+                  onLoad={() => handleImageLoad(index)}
+                  className={loadedImages.has(index) ? 'image-loaded' : 'image-loading'}
+                />
+                {loadedImages.has(index) && (
+                  <div className="gallery-overlay">
+                    <span className="view-text">View Full Size</span>
+                  </div>
+                )}
               </div>
             ))}
           </div>
