@@ -163,32 +163,42 @@
 /* Directions control styling - Style Google Maps */
 .mapboxgl-ctrl-directions {
   background-color: white;
-  border-radius: 2px;
+  border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  max-width: 400px;
+  max-width: 420px;
   font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 .mapbox-directions-component {
   background-color: white;
+  border-radius: 8px;
 }
 
 .mapbox-directions-inputs {
   background-color: white;
-  padding: 10px;
+  padding: 16px;
+  border-radius: 8px 8px 0 0;
 }
 
 .mapbox-directions-component-keyline {
   background-color: #e0e0e0;
   height: 1px;
+  margin: 0;
 }
 
 .mapbox-directions-origin,
 .mapbox-directions-destination {
   background-color: white;
   border: 1px solid #dadce0;
-  border-radius: 2px;
-  margin-bottom: 8px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  transition: border-color 0.2s ease;
+}
+
+.mapbox-directions-origin:focus-within,
+.mapbox-directions-destination:focus-within {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 1px #1a73e8;
 }
 
 .mapbox-directions-origin input,
@@ -196,61 +206,127 @@
   font-family: 'Roboto', 'Open Sans', sans-serif;
   font-size: 14px;
   color: #202124;
-  padding: 10px 12px;
+  padding: 12px 14px;
+  border: none;
+  outline: none;
+  width: 100%;
 }
 
+.mapbox-directions-origin input::placeholder,
+.mapbox-directions-destination input::placeholder {
+  color: #5f6368;
+}
+
+/* Profils de transport - Style Google Maps */
 .mapbox-directions-profile {
   display: flex;
-  gap: 0;
-  padding: 10px;
+  gap: 8px;
+  padding: 12px 16px;
   background-color: white;
   border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  justify-content: space-between;
+}
+
+.mapbox-directions-profile input[type="radio"] {
+  display: none;
 }
 
 .mapbox-directions-profile label {
   cursor: pointer;
-  padding: 8px 16px;
-  border-radius: 2px;
+  padding: 10px 16px;
+  border-radius: 20px;
   transition: all 0.2s ease;
   font-size: 13px;
+  font-weight: 500;
   color: #5f6368;
   flex: 1;
   text-align: center;
   border: 1px solid #dadce0;
-  margin-right: 8px;
   background-color: white;
-}
-
-.mapbox-directions-profile label:last-child {
-  margin-right: 0;
-}
-
-.mapbox-directions-profile input:checked + label {
-  background-color: #1a73e8;
-  color: white;
-  border-color: #1a73e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
 }
 
 .mapbox-directions-profile label:hover {
   background-color: #f8f9fa;
+  border-color: #5f6368;
+}
+
+.mapbox-directions-profile input:checked + label {
+  background-color: #e8f0fe;
+  color: #1a73e8;
+  border-color: #1a73e8;
+  font-weight: 600;
 }
 
 .mapbox-directions-profile input:checked + label:hover {
-  background-color: #1557b0;
+  background-color: #d2e3fc;
+}
+
+/* Renommer les labels des profils */
+.mapbox-directions-profile label[for*="driving"]::before {
+  content: '🚗 ';
+}
+
+.mapbox-directions-profile label[for*="walking"]::before {
+  content: '🚶 ';
+}
+
+.mapbox-directions-profile label[for*="cycling"]::before {
+  content: '🚴 ';
 }
 
 .mapbox-directions-instructions {
   background-color: white;
   max-height: 400px;
   overflow-y: auto;
+  border-radius: 0 0 8px 8px;
 }
 
 .mapbox-directions-route-summary {
   background-color: #f8f9fa;
-  padding: 12px;
+  padding: 14px 16px;
   border-bottom: 1px solid #e0e0e0;
   font-size: 14px;
+  font-weight: 500;
   color: #202124;
+}
+
+.mapbox-directions-route {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.mapbox-directions-route:hover {
+  background-color: #f8f9fa;
+}
+
+.mapbox-directions-route-heading {
+  font-size: 14px;
+  font-weight: 500;
+  color: #202124;
+  margin-bottom: 4px;
+}
+
+.mapbox-directions-route-summary {
+  font-size: 13px;
+  color: #5f6368;
+}
+
+/* Bouton de géolocalisation */
+.mapboxgl-ctrl-geolocate {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mapboxgl-ctrl-geolocate .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='29' viewBox='0 0 29 29' fill='%23333'%3E%3Cpath d='M14.5 3.5c-6.1 0-11 4.9-11 11s4.9 11 11 11 11-4.9 11-11-4.9-11-11-11zm0 2c5 0 9 4 9 9s-4 9-9 9-9-4-9-9 4-9 9-9z'/%3E%3Ccircle cx='14.5' cy='14.5' r='4'/%3E%3C/svg%3E");
 }
 
 @media (max-width: 1024px) {
@@ -259,7 +335,16 @@
   }
   
   .mapboxgl-ctrl-directions {
-    max-width: 320px;
+    max-width: 340px;
+  }
+  
+  .mapbox-directions-profile {
+    flex-wrap: wrap;
+  }
+  
+  .mapbox-directions-profile label {
+    flex: 1 1 45%;
+    min-width: 100px;
   }
   
   .mapboxgl-ctrl-bottom-right {

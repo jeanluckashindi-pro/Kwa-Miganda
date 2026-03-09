@@ -59,11 +59,22 @@ export default function Location() {
         
         map.current.addControl(new window.mapboxgl.FullscreenControl(), 'bottom-right');
         
+        // Ajouter le contrôle de géolocalisation
+        const geolocateControl = new window.mapboxgl.GeolocateControl({
+          positionOptions: {
+            enableHighAccuracy: true
+          },
+          trackUserLocation: true,
+          showUserHeading: true
+        });
+        
+        map.current.addControl(geolocateControl, 'bottom-right');
+        
         // Ajouter le contrôle de directions (itinéraire)
         const directions = new window.MapboxDirections({
           accessToken: MAPBOX_TOKEN,
           unit: 'metric',
-          profile: 'mapbox/driving',
+          profile: 'mapbox/driving-traffic',
           alternatives: true,
           congestion: true,
           controls: {
@@ -72,14 +83,29 @@ export default function Location() {
             profileSwitcher: true
           },
           interactive: true,
-          placeholderOrigin: 'Choisir le point de départ',
-          placeholderDestination: 'Kwa Miganda Lodge'
+          placeholderOrigin: 'Ma position actuelle',
+          placeholderDestination: 'Kwa Miganda Lodge',
+          flyTo: false
         });
         
         map.current.addControl(directions, 'top-left');
         
         // Définir automatiquement la destination comme Kwa Miganda
         directions.setDestination([KWA_MIGANDA_LOCATION.longitude, KWA_MIGANDA_LOCATION.latitude]);
+        
+        // Essayer d'obtenir la position actuelle de l'utilisateur
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              const userLocation = [position.coords.longitude, position.coords.latitude];
+              directions.setOrigin(userLocation);
+              console.log('✅ Position actuelle définie:', userLocation);
+            },
+            (error) => {
+              console.log('ℹ️ Géolocalisation non disponible:', error.message);
+            }
+          );
+        }
 
         // Charger et ajouter le GeoJSON du Burundi (frontière uniquement)
         fetch('/geojson/burundi.geojson')
