@@ -39,24 +39,37 @@
       "description": "Discover indigenous medicinal plants and learn about traditional healing practices."
     },
     "learnMore": "LEARN MORE",
-    "findUs": "Find Us in Mwaro",
-    "findUsDescription": "Kwa Miganda is located in Mwaro Province, in the heart of Burundi's lush highlands — easily accessible from both major cities.",
-    "locationInfo": {
-      "hours": {
-        "title": "2 hours",
-        "from": "from Bujumbura"
-      },
-      "minutes": {
-        "title": "35 minutes",
-        "from": "from Gitega"
-      },
-      "province": {
-        "title": "Mwaro Province",
-        "subtitle": "Central Burundi"
+    "landscapes": {
+      "label": "NATURE & LANDSCAPES",
+      "title": "Explore the Landscapes of Mwaro",
+      "description": "Discover the breathtaking natural beauty surrounding Kwa Miganda — from rolling hills to lush forests.",
+      "items": {
+        "hills": {
+          "title": "Rolling Hills",
+          "description": "Endless green hills stretching across the horizon, offering panoramic views of Burundi's highlands."
+        },
+        "forests": {
+          "title": "Lush Forests",
+          "description": "Dense tropical forests filled with indigenous flora and fauna, perfect for nature walks and bird watching."
+        },
+        "trails": {
+          "title": "Mountain Trails",
+          "description": "Scenic hiking trails winding through the mountains, revealing hidden waterfalls and stunning vistas."
+        },
+        "plantations": {
+          "title": "Tea Plantations",
+          "description": "Vibrant tea plantations cascading down the hillsides, showcasing Burundi's agricultural heritage."
+        },
+        "village": {
+          "title": "Traditional Village",
+          "description": "Authentic Burundian villages where ancient customs and community life thrive in harmony with nature."
+        },
+        "sunset": {
+          "title": "Sunset Views",
+          "description": "Breathtaking sunset vistas painting the sky in golden hues over the rolling hills of Mwaro."
+        }
       }
     },
-    "openInMaps": "Open in Maps",
-    "copyAddress": "Copy Address",
     "cta": {
       "label": "PLAN YOUR JOURNEY",
       "title": "Plan Your Visit to Kwa Miganda",

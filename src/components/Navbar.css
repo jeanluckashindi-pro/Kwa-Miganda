@@ -78,8 +78,8 @@
 }
 
 .book-btn {
-  background-color: white;
-  color: black;
+  background-color: white ;
+  color: #000000 !important;
   padding: 0.6rem 1.5rem;
   border: 2px solid white;
   border-radius: 8px;
@@ -93,7 +93,7 @@
 
 .book-btn:hover {
   background-color: rgba(255, 255, 255, 0.9);
-  color: black;
+  color: #000000;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   opacity: 1;

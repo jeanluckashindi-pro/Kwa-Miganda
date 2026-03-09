@@ -39,24 +39,37 @@
       "description": "Découvrez les plantes médicinales indigènes et apprenez les pratiques de guérison traditionnelles."
     },
     "learnMore": "EN SAVOIR PLUS",
-    "findUs": "Trouvez-nous à Mwaro",
-    "findUsDescription": "Kwa Miganda est situé dans la province de Mwaro, au cœur des hautes terres verdoyantes du Burundi — facilement accessible depuis les deux grandes villes.",
-    "locationInfo": {
-      "hours": {
-        "title": "2 heures",
-        "from": "depuis Bujumbura"
-      },
-      "minutes": {
-        "title": "35 minutes",
-        "from": "depuis Gitega"
-      },
-      "province": {
-        "title": "Province de Mwaro",
-        "subtitle": "Burundi Central"
+    "landscapes": {
+      "label": "NATURE & PAYSAGES",
+      "title": "Explorez les Paysages de Mwaro",
+      "description": "Découvrez la beauté naturelle époustouflante qui entoure Kwa Miganda — des collines ondulantes aux forêts luxuriantes.",
+      "items": {
+        "hills": {
+          "title": "Collines Ondulantes",
+          "description": "Des collines vertes infinies s'étendant à l'horizon, offrant des vues panoramiques sur les hautes terres du Burundi."
+        },
+        "forests": {
+          "title": "Forêts Luxuriantes",
+          "description": "Des forêts tropicales denses remplies de flore et faune indigènes, parfaites pour les promenades nature et l'observation des oiseaux."
+        },
+        "trails": {
+          "title": "Sentiers de Montagne",
+          "description": "Des sentiers de randonnée pittoresques serpentant à travers les montagnes, révélant des cascades cachées et des vues magnifiques."
+        },
+        "plantations": {
+          "title": "Plantations de Thé",
+          "description": "Des plantations de thé vibrantes cascadant sur les flancs des collines, mettant en valeur le patrimoine agricole du Burundi."
+        },
+        "village": {
+          "title": "Village Traditionnel",
+          "description": "Villages burundais authentiques où les coutumes anciennes et la vie communautaire prospèrent en harmonie avec la nature."
+        },
+        "sunset": {
+          "title": "Vues du Coucher de Soleil",
+          "description": "Vues époustouflantes du coucher de soleil peignant le ciel en teintes dorées sur les collines ondulantes de Mwaro."
+        }
       }
     },
-    "openInMaps": "Ouvrir dans Maps",
-    "copyAddress": "Copier l'adresse",
     "cta": {
       "label": "PLANIFIEZ VOTRE VOYAGE",
       "title": "Planifiez Votre Visite à Kwa Miganda",

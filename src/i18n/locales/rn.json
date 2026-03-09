@@ -38,7 +38,67 @@
       "title": "Ubusitani bw'Ibimera",
       "description": "Vumbura ibimera vy'ubuvuzi vya kera maze wige ku migenzo yo kuvura ya kera."
     },
-    "learnMore": "MENYA VYINSHI"
+    "learnMore": "MENYA VYINSHI",
+    "landscapes": {
+      "label": "UBWIZA BW'ISI & IMISOZI",
+      "title": "Vumbura Imisozi ya Mwaro",
+      "description": "Vumbura ubwiza bw'isi bushimishije bukikije Kwa Miganda — kuva ku misozi y'icyatsi kugera mu mashyamba y'icyatsi.",
+      "items": {
+        "hills": {
+          "title": "Imisozi y'Icyatsi",
+          "description": "Imisozi y'icyatsi idahera ikurikirana ku kirere, itanga amashusho meza y'imisozi y'Uburundi."
+        },
+        "forests": {
+          "title": "Amashyamba y'Icyatsi",
+          "description": "Amashyamba y'ubushyuhe yuzuye ibimera n'inyamaswa za kera, meza kugenda mu bwiza bw'isi no kuraba inyoni."
+        },
+        "trails": {
+          "title": "Inzira z'Imisozi",
+          "description": "Inzira zo kugenda mu misozi nziza zinyeganyeza mu misozi, zigaragaza amazi amanuka n'amashusho meza."
+        },
+        "plantations": {
+          "title": "Imirima y'Icayi",
+          "description": "Imirima y'icayi ishimishije imanuka ku misozi, yerekana umurage w'uburimyi bw'Uburundi."
+        },
+        "village": {
+          "title": "Umudugudu wa Kera",
+          "description": "Imidugudu y'Uburundi y'ukuri aho imigenzo ya kera n'ubuzima bw'abaturage bikura mu mahoro n'ubwiza bw'isi."
+        },
+        "sunset": {
+          "title": "Amashusho y'Izuba Rirengeye",
+          "description": "Amashusho meza y'izuba rirengeye rirangiza ikirere mu rangi y'izahabu hejuru y'imisozi ya Mwaro."
+        }
+      }
+    },
+    "cta": {
+      "label": "TEGURA URUGENDO RWAWE",
+      "title": "Tegura Gusura Kwa Miganda",
+      "description": "Tangura urugendo rwawe mu murage n'ubwiza bw'isi bw'Uburundi.",
+      "button": "TANGA UMWANYA W'UBUNARARIBONYE BWAWE"
+    },
+    "heritage": {
+      "label": "UMURAGE W'UMUCO",
+      "title": "Ubuhamya bw'Imigenzo y'Uburundi",
+      "description": "Kwa Miganda ntabwo ari aho gusa — ni uburorerwe bw'indangagaciro, aho buri nzu, ikimera, n'indirimbo bivuga inkuru y'ubutwari n'ubwiza.",
+      "features": {
+        "architecture": {
+          "title": "Ubwubatsi bwa Kera",
+          "description": "Rugo riroreka uburyo bwo kubaka bwa kera bukoresheje ubutaka, ibiti, n'ibyatsi — inzu ndangamurage y'ubuzima bw'Uburundi."
+        },
+        "plants": {
+          "title": "Ibimera vy'Ubuvuzi",
+          "description": "Ubusitani bwacu bufise ibimera vyinshi vya kera vyakoreshejwe mu kuvura kwa kera, vyanditswe kandi vyitabwaho n'abasaza b'aha hantu."
+        },
+        "music": {
+          "title": "Umuziki & Imivugo",
+          "description": "Umve imbaraga z'ingoma z'Uburundi n'imigenzo y'imivugo itanga inkuru mu bwonko."
+        },
+        "community": {
+          "title": "Abaturage",
+          "description": "Kwa Miganda ifasha imiryango y'aha hantu, ikaba yemeza ko ubumenyi bw'umuco burorerwa kandi bugabanwa n'isi yose."
+        }
+      }
+    }
   },
   "experience": {
     "title": "Ubunararibonye Bwacu",

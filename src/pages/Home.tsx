@@ -140,82 +140,119 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="location-section">
-        <div className="location-header">
-          <h2 className="location-title">{t('home.findUs')}</h2>
-          <p className="location-description">{t('home.findUsDescription')}</p>
-        </div>
-        
-        <div className="location-info-grid">
-          <div className="location-info-card">
-            <div className="location-info-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
-            </div>
-            <h3>{t('home.locationInfo.hours.title')}</h3>
-            <p className="location-info-from">{t('home.locationInfo.hours.from')}</p>
-          </div>
-
-          <div className="location-info-card">
-            <div className="location-info-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 6v6l4 2"/>
-              </svg>
-            </div>
-            <h3>{t('home.locationInfo.minutes.title')}</h3>
-            <p className="location-info-from">{t('home.locationInfo.minutes.from')}</p>
-          </div>
-
-          <div className="location-info-card">
-            <div className="location-info-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
-            <h3>{t('home.locationInfo.province.title')}</h3>
-            <p className="location-info-from">{t('home.locationInfo.province.subtitle')}</p>
-          </div>
+      <section className="landscapes-section">
+        <div className="landscapes-header">
+          <p className="section-label">{t('home.landscapes.label')}</p>
+          <h2 className="section-title">{t('home.landscapes.title')}</h2>
+          <p className="landscapes-description">{t('home.landscapes.description')}</p>
         </div>
 
-        <div className="map-fullscreen">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127094.5!2d29.7!3d-3.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMTgnMDAuMCJTIDI5wrA0MicwMC4wIkU!5e0!3m2!1sen!2s!4v1234567890"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <div className="map-marker">
-            <div className="marker-pulse"></div>
-            <div className="marker-pin">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-              </svg>
+        <div className="carousel-container">
+          <button className="carousel-btn carousel-btn-prev" onClick={() => {
+            const track = document.querySelector('.carousel-track');
+            if (track) track.scrollBy({ left: -400, behavior: 'smooth' });
+          }}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+
+          <button className="carousel-btn carousel-btn-next" onClick={() => {
+            const track = document.querySelector('.carousel-track');
+            if (track) track.scrollBy({ left: 400, behavior: 'smooth' });
+          }}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+
+          <div className="carousel-track">
+            <div className="landscape-card">
+              <div className="landscape-image">
+                <img src="/2.jpg" alt="Rolling Hills" />
+                <div className="landscape-overlay">
+                  <div className="landscape-number">01</div>
+                  <div className="landscape-text">
+                    <h3>{t('home.landscapes.items.hills.title')}</h3>
+                    <p>{t('home.landscapes.items.hills.description')}</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="marker-label">Kwa Miganda</div>
+
+            <div className="landscape-card">
+              <div className="landscape-image">
+                <img src="/3.jpg" alt="Lush Forests" />
+                <div className="landscape-overlay">
+                  <div className="landscape-number">02</div>
+                  <div className="landscape-text">
+                    <h3>{t('home.landscapes.items.forests.title')}</h3>
+                    <p>{t('home.landscapes.items.forests.description')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="landscape-card">
+              <div className="landscape-image">
+                <img src="/4.jpg" alt="Mountain Trails" />
+                <div className="landscape-overlay">
+                  <div className="landscape-number">03</div>
+                  <div className="landscape-text">
+                    <h3>{t('home.landscapes.items.trails.title')}</h3>
+                    <p>{t('home.landscapes.items.trails.description')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="landscape-card">
+              <div className="landscape-image">
+                <img src="/5.jpg" alt="Tea Plantations" />
+                <div className="landscape-overlay">
+                  <div className="landscape-number">04</div>
+                  <div className="landscape-text">
+                    <h3>{t('home.landscapes.items.plantations.title')}</h3>
+                    <p>{t('home.landscapes.items.plantations.description')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="landscape-card">
+              <div className="landscape-image">
+                <img src="/6.jpg" alt="Traditional Village" />
+                <div className="landscape-overlay">
+                  <div className="landscape-number">05</div>
+                  <div className="landscape-text">
+                    <h3>{t('home.landscapes.items.village.title')}</h3>
+                    <p>{t('home.landscapes.items.village.description')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="landscape-card">
+              <div className="landscape-image">
+                <img src="/7.jpg" alt="Sunset Views" />
+                <div className="landscape-overlay">
+                  <div className="landscape-number">06</div>
+                  <div className="landscape-text">
+                    <h3>{t('home.landscapes.items.sunset.title')}</h3>
+                    <p>{t('home.landscapes.items.sunset.description')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="map-controls">
-            <button className="map-control-btn" onClick={() => window.open('https://maps.google.com/?q=Mwaro,Burundi', '_blank')}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-              <span>{t('home.openInMaps')}</span>
-            </button>
-            <button className="map-control-btn" onClick={() => navigator.clipboard.writeText('Mwaro Province, Burundi')}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-              </svg>
-              <span>{t('home.copyAddress')}</span>
-            </button>
+
+          <div className="carousel-indicators">
+            <span className="indicator active"></span>
+            <span className="indicator"></span>
+            <span className="indicator"></span>
+            <span className="indicator"></span>
+            <span className="indicator"></span>
+            <span className="indicator"></span>
           </div>
         </div>
       </section>

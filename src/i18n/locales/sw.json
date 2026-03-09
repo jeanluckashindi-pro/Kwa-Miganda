@@ -38,7 +38,67 @@
       "title": "Bustani ya Mimea",
       "description": "Gundua mimea ya dawa ya asili na ujifunze kuhusu mazoea ya uponyaji wa jadi."
     },
-    "learnMore": "JIFUNZE ZAIDI"
+    "learnMore": "JIFUNZE ZAIDI",
+    "landscapes": {
+      "label": "ASILI & MANDHARI",
+      "title": "Chunguza Mandhari ya Mwaro",
+      "description": "Gundua uzuri wa asili unaovutia unaozunguka Kwa Miganda — kutoka vilima vya kijani hadi misitu ya kijani.",
+      "items": {
+        "hills": {
+          "title": "Vilima vya Kijani",
+          "description": "Vilima vya kijani visivyokwisha vinavyoenea kwenye upeo wa macho, vikitoa mandhari ya vilima vya Burundi."
+        },
+        "forests": {
+          "title": "Misitu ya Kijani",
+          "description": "Misitu ya kitropiki yenye mimea na wanyama wa asili, nzuri kwa matembezi ya asili na kutazama ndege."
+        },
+        "trails": {
+          "title": "Njia za Milimani",
+          "description": "Njia za kupanda milima zenye mandhari nzuri zinazopinda kupitia milima, zikionyesha maporomoko ya maji yaliyofichwa na mandhari nzuri."
+        },
+        "plantations": {
+          "title": "Mashamba ya Chai",
+          "description": "Mashamba ya chai yenye rangi nzuri yanayoshuka kwenye miteremko ya vilima, yakionyesha urithi wa kilimo wa Burundi."
+        },
+        "village": {
+          "title": "Kijiji cha Jadi",
+          "description": "Vijiji halisi vya Burundi ambapo desturi za kale na maisha ya jamii yanastawi kwa upatano na asili."
+        },
+        "sunset": {
+          "title": "Mandhari ya Machweo",
+          "description": "Mandhari ya kuvutia ya machweo yanayopaka anga kwa rangi za dhahabu juu ya vilima vya Mwaro."
+        }
+      }
+    },
+    "cta": {
+      "label": "PANGA SAFARI YAKO",
+      "title": "Panga Ziara Yako kwa Kwa Miganda",
+      "description": "Anza safari yako katika urithi na asili ya Burundi.",
+      "button": "WEKA UZOEFU WAKO"
+    },
+    "heritage": {
+      "label": "URITHI WA KITAMADUNI",
+      "title": "Ushuhuda Hai wa Mila ya Burundi",
+      "description": "Kwa Miganda si mahali tu — ni uhifadhi wa utambulisho, ambapo kila kibanda, mmea, na wimbo unasimulia hadithi ya ujasiri na uzuri.",
+      "features": {
+        "architecture": {
+          "title": "Usanifu wa Jadi",
+          "description": "Kiwanja cha Rugo kinahifadhi mbinu za ujenzi wa kale zinazotumia udongo, mbao, na majani — makumbusho hai ya maisha ya nyumbani ya Burundi."
+        },
+        "plants": {
+          "title": "Mimea ya Dawa",
+          "description": "Bustani yetu ya mimea ina aina nyingi za asili zilizotumika kwa karne nyingi katika uponyaji wa jadi, zilizoandikwa na kutunzwa na wazee wa ndani."
+        },
+        "music": {
+          "title": "Muziki & Ushairi",
+          "description": "Jisikie nguvu ya mdundo wa ngoma za Burundi na mila ya ushairi wa mdomo inayobeba hadithi kwa vizazi."
+        },
+        "community": {
+          "title": "Jamii",
+          "description": "Kwa Miganda inasaidia moja kwa moja familia za ndani, ikihakikisha kwamba maarifa ya kitamaduni yanahifadhiwa na kushirikiwa na ulimwengu."
+        }
+      }
+    }
   },
   "experience": {
     "title": "Uzoefu Wetu",
