@@ -1,10 +1,17 @@
 export const MAPBOX_TOKEN = "pk.eyJ1Ijoid2FiZW5nYSIsImEiOiJjbHYyZDZycWMwODZzMmtudWVvdXFxY2xyIn0.cysmLEbhoPU_7w9YZP7b6w";
 
+// Coordonnées exactes de Kwa Miganda (depuis Google Maps)
+export const KWA_MIGANDA_LOCATION = {
+  longitude: 29.7139848,
+  latitude: -3.4576685,
+  zoom: 13
+};
+
 // Centre du Burundi avec un zoom plus large pour voir tout le pays
 export const BURUNDI_CENTER = {
   longitude: 29.9189,
   latitude: -3.3731,
-  zoom: 8  // Zoom optimal pour voir tout le pays sans saturation
+  zoom: 8
 };
 
 // Limites du Burundi (bounding box)
