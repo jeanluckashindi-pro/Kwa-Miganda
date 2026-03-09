@@ -686,12 +686,30 @@
 
 /* Responsive breakpoints */
 @media (max-width: 1024px) {
+  .location-page {
+    padding-top: 70px;
+  }
+  
+  .location-map-fullscreen {
+    top: 70px;
+    height: calc(100vh - 70px);
+  }
+  
   .custom-directions-panel {
     width: clamp(300px, 90vw, 380px);
   }
 }
 
 @media (max-width: 768px) {
+  .location-page {
+    padding-top: 60px;
+  }
+  
+  .location-map-fullscreen {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+  
   .custom-directions-panel {
     top: 10px;
     left: 10px;

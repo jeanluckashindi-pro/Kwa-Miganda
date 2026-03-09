@@ -1,22 +1,242 @@
-.heritage {
+.heritage-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* Hero Section */
+.heritage-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heritage-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
   padding: 2rem;
+  max-width: 800px;
+}
+
+.heritage-hero .hero-title {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.heritage-hero .hero-subtitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  margin: 0;
+  opacity: 0.95;
+}
+
+.heritage-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Content Sections */
+.heritage-content {
+  background: #ffffff;
+}
+
+.content-section {
+  padding: 4rem 2rem;
+}
+
+.content-section:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.heritage h1 {
+.section-card {
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
   margin-bottom: 2rem;
 }
 
-.heritage-content section {
-  margin-bottom: 2rem;
-  padding: 2rem;
-  background: #ffffff;
-  border-radius: 10px;
+.section-icon {
+  width: 40px;
+  height: 40px;
+  color: white;
 }
 
-.heritage-content h2 {
+.section-title {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   color: #2c3e50;
-  margin-bottom: 1rem;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+/* Values Section */
+.values-section {
+  padding: 4rem 2rem;
+  background: #ffffff;
+}
+
+.values-title {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  text-align: center;
+  color: #2c3e50;
+  margin: 0 0 3rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background: #f8f9fa;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: #667eea;
+}
+
+.value-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.value-icon {
+  width: 35px;
+  height: 35px;
+  color: white;
+}
+
+.value-name {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heritage-hero {
+    height: 50vh;
+    min-height: 350px;
+  }
+
+  .content-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .values-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .section-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heritage-hero {
+    height: 45vh;
+    min-height: 300px;
+  }
+
+  .content-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .values-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .value-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .section-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .value-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .value-icon {
+    width: 30px;
+    height: 30px;
+  }
 }

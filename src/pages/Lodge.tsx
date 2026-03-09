@@ -1,8 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import {
   Bed,
-  ChefHat,
-  Waves,
   Sparkles,
   Utensils,
   MapPin,
@@ -159,7 +157,7 @@ export default function Lodge() {
           </div>
 
           <div className="rooms-grid">
-            {rooms.map((room, index) => (
+            {rooms.map((room) => (
               <div
                 key={room.key}
                 className="room-card"
