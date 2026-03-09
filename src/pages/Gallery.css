@@ -84,6 +84,7 @@
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
   border-radius: 12px;
+  z-index: 1;
 }
 
 @keyframes shimmer {
@@ -132,7 +133,19 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.gallery-item img.image-loading {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.gallery-item img.image-loaded {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
 }
 
 .gallery-overlay {
@@ -147,6 +160,7 @@
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: 2;
 }
 
 .gallery-item:hover .gallery-overlay {
