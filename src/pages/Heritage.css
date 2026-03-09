@@ -8,7 +8,7 @@
   position: relative;
   height: 60vh;
   min-height: 400px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a8a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +89,7 @@
   justify-content: center;
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a8a;
   border-radius: 50%;
   margin-bottom: 2rem;
 }
@@ -162,7 +162,7 @@
   justify-content: center;
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a8a;
   border-radius: 50%;
   margin-bottom: 1.5rem;
 }
@@ -230,7 +230,7 @@
 .tradition-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
-  border-color: #667eea;
+  border-color: #1e3a8a;
 }
 
 .tradition-icon-wrapper {
@@ -239,7 +239,7 @@
   justify-content: center;
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a8a;
   border-radius: 50%;
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease;
@@ -297,7 +297,7 @@
 .achievement-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-color: #667eea;
+  border-color: #1e3a8a;
   background: white;
 }
 
@@ -307,7 +307,7 @@
   justify-content: center;
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a8a;
   border-radius: 50%;
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease;
@@ -342,7 +342,7 @@
 /* Heritage CTA Section */
 .heritage-cta {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a8a;
   color: white;
 }
 
@@ -376,7 +376,7 @@
   gap: 0.75rem;
   padding: 1.2rem 2.5rem;
   background: white;
-  color: #667eea;
+  color: #1e3a8a;
   border: none;
   border-radius: 50px;
   font-family: 'Ubuntu', sans-serif;

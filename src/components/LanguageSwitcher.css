@@ -18,8 +18,10 @@
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
 }
 
 .language-toggle:hover {
@@ -97,11 +99,63 @@
   .language-switcher {
     width: 100%;
     justify-content: center;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .language-toggle {
+    width: 100%;
+    justify-content: center;
+    padding: 0.9rem 1.25rem;
+    font-size: 0.95rem;
   }
 
   .language-dropdown {
     right: auto;
     left: 50%;
     transform: translateX(-50%);
+    width: calc(100% - 2rem);
+    max-width: 280px;
+  }
+
+  .language-option {
+    padding: 0.85rem 1.25rem;
+  }
+
+  .lang-code {
+    font-size: 0.9rem;
+  }
+
+  .lang-name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-toggle {
+    padding: 0.85rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .language-toggle svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .language-dropdown {
+    width: calc(100% - 1.5rem);
+  }
+
+  .language-option {
+    padding: 0.8rem 1rem;
+  }
+
+  .lang-code {
+    font-size: 0.85rem;
+  }
+
+  .lang-name {
+    font-size: 0.85rem;
   }
 }

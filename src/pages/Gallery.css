@@ -8,7 +8,7 @@
   position: relative;
   height: 50vh;
   min-height: 350px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a8a;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -223,7 +223,7 @@
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a8a;
   border: none;
   color: white;
   padding: 0.8rem 1.5rem;
@@ -241,7 +241,7 @@
 
 .lightbox-download:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 5px 20px rgba(30, 58, 138, 0.4);
 }
 
 .lightbox-download svg {

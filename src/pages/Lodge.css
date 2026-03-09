@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a8a;
   overflow: hidden;
 }
 
@@ -160,7 +160,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--room-color, #667eea) 0%, var(--room-color, #764ba2) 100%);
+  background: var(--room-color, #1e3a8a);
   border-radius: 50%;
   color: white;
   transition: transform 0.3s ease;
@@ -212,7 +212,7 @@
 .detail-icon {
   width: 18px;
   height: 18px;
-  color: #667eea;
+  color: #1e3a8a;
   flex-shrink: 0;
 }
 
@@ -262,7 +262,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a8a;
   border-radius: 50%;
   color: white;
   transition: transform 0.3s ease;
@@ -326,7 +326,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a8a;
   border-radius: 50%;
   color: white;
   transition: transform 0.3s ease;
@@ -360,7 +360,7 @@
 /* Booking Section */
 .booking-section {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1e3a8a;
   color: white;
 }
 
@@ -425,7 +425,7 @@
 
 .btn-primary {
   background: white;
-  color: #667eea;
+  color: #1e3a8a;
   font-weight: 700;
 }
 
@@ -443,7 +443,7 @@
 
 .btn-secondary:hover {
   background: white;
-  color: #667eea;
+  color: #1e3a8a;
   transform: translateY(-2px);
 }
 

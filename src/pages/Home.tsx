@@ -13,10 +13,10 @@ export default function Home() {
     <div className="home">
       <section className="hero">
         <div className="hero-content">
-          <p className="hero-location font-2xl">{t('home.location')}</p>
+          <p className="hero-location font-2xl" style={{marginTop:'50px'}}>{t('home.location')}</p>
           <div className="hero-title-group">
-            <h1 className="hero-title">{t('home.title')}</h1>
-            <p className="hero-subtitle">{t('home.subtitle')}</p>
+            <h1 className="hero-title tittre">{t('home.title')}</h1>
+            <p className="hero-subtitle other">{t('home.subtitle')}</p>
           </div>
           <p className="hero-description">{t('home.description')}</p>
           <div className="hero-buttons">
