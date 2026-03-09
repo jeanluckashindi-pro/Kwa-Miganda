@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -5,14 +6,32 @@ import './Navbar.css';
 
 export default function Navbar() {
   const { t } = useTranslation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <nav className="navbar">
-      <Link to="/" className="nav-brand">Kwa Miganda</Link>
-      <div className="nav-right">
+      <Link to="/" className="nav-brand" onClick={closeMenu}>Kwa Miganda</Link>
+      
+      <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
+        <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <div className={`nav-right ${isMenuOpen ? 'open' : ''}`}>
         <ul className="nav-links">
           <li>
-            <Link to="/">
+            <Link to="/" onClick={closeMenu}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                 <polyline points="9 22 9 12 15 12 15 22"/>
@@ -21,7 +40,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/experience">
+            <Link to="/experience" onClick={closeMenu}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <circle cx="12" cy="12" r="10"/>
                 <path d="M12 6v6l4 2"/>
@@ -30,7 +49,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/lodge">
+            <Link to="/lodge" onClick={closeMenu}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
               </svg>
@@ -38,7 +57,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/heritage">
+            <Link to="/heritage" onClick={closeMenu}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                 <path d="M2 12h20"/>
@@ -47,7 +66,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/gallery">
+            <Link to="/gallery" onClick={closeMenu}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
                 <circle cx="8.5" cy="8.5" r="1.5"/>
@@ -57,7 +76,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/location">
+            <Link to="/location" onClick={closeMenu}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                 <circle cx="12" cy="10" r="3"/>
@@ -66,7 +85,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/book" className="book-btn">
+            <Link to="/book" className="book-btn" onClick={closeMenu}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
                 <line x1="16" y1="2" x2="16" y2="6"/>

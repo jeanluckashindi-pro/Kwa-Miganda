@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import { useTranslation } from 'react-i18next';
 import { MAPBOX_TOKEN, KWA_MIGANDA_LOCATION } from '../config/mapConfig';
 import './Location.css';
 
@@ -11,7 +10,6 @@ declare global {
 }
 
 export default function Location() {
-  const { t } = useTranslation();
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<any>(null);
 
@@ -70,7 +68,7 @@ export default function Location() {
         
         map.current.addControl(geolocateControl, 'bottom-right');
         
-        // Ajouter le contrôle de directions (itinéraire)
+        // Ajouter le contrôle de directions avec options de transport
         const directions = new window.MapboxDirections({
           accessToken: MAPBOX_TOKEN,
           unit: 'metric',
@@ -83,12 +81,12 @@ export default function Location() {
             profileSwitcher: true
           },
           interactive: true,
-          placeholderOrigin: 'Ma position actuelle',
+          placeholderOrigin: 'Votre position actuelle',
           placeholderDestination: 'Kwa Miganda Lodge',
           flyTo: false
         });
         
-        map.current.addControl(directions, 'top-left');
+        map.current.addControl(directions, 'bottom-left');
         
         // Définir automatiquement la destination comme Kwa Miganda
         directions.setDestination([KWA_MIGANDA_LOCATION.longitude, KWA_MIGANDA_LOCATION.latitude]);
@@ -164,11 +162,6 @@ export default function Location() {
 
   return (
     <div className="location-page">
-      <div className="location-header-section">
-        <h1>{t('location.title')}</h1>
-        <p className="location-subtitle">{t('location.howToFind')}</p>
-      </div>
-
       <div className="location-map-fullscreen">
         <div ref={mapContainer} className="map-container-main" />
       </div>

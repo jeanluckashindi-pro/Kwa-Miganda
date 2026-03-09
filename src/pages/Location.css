@@ -1,36 +1,17 @@
 .location-page {
   min-height: 100vh;
-  padding-top: 80px;
+  padding-top: 0;
   background-color: #ffffff;
-}
-
-.location-header-section {
-  text-align: center;
-  padding: 4rem 2rem 3rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-}
-
-.location-header-section h1 {
-  font-family: 'Anton', sans-serif;
-  font-size: 3rem;
-  color: #2c3e50;
-  margin-bottom: 1rem;
-  font-weight: 400;
-}
-
-.location-subtitle {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.125rem;
-  color: #666;
-  max-width: 600px;
-  margin: 0 auto;
+  position: relative;
 }
 
 .location-map-fullscreen {
-  position: relative;
-  width: 100%;
-  height: calc(100vh - 250px);
-  min-height: 700px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
 }
 
 .map-container-main {
@@ -51,7 +32,7 @@
   height: 100% !important;
 }
 
-/* Marqueur style Google Maps */
+/* Marqueur style Google Maps - Responsive */
 .custom-marker-pin {
   cursor: pointer;
   display: flex;
@@ -68,8 +49,8 @@
 }
 
 .pin-head {
-  width: 32px;
-  height: 32px;
+  width: clamp(28px, 4vw, 32px);
+  height: clamp(28px, 4vw, 32px);
   background-color: #ea4335;
   border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
@@ -80,8 +61,8 @@
 .pin-head::after {
   content: '';
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: clamp(12px, 2vw, 14px);
+  height: clamp(12px, 2vw, 14px);
   background-color: white;
   border-radius: 50%;
   top: 50%;
@@ -104,10 +85,10 @@
 .marker-label {
   margin-top: 8px;
   background-color: white;
-  padding: 6px 12px;
+  padding: clamp(4px, 1vw, 6px) clamp(8px, 2vw, 12px);
   border-radius: 4px;
   font-family: 'Roboto', 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: clamp(12px, 1.5vw, 14px);
   font-weight: 500;
   color: #202124;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -129,7 +110,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Mapbox controls styling - Style Google Maps */
+/* Mapbox controls styling - Style Google Maps - Responsive */
 .mapboxgl-ctrl-group {
   background-color: white !important;
   border-radius: 2px !important;
@@ -138,8 +119,8 @@
 }
 
 .mapboxgl-ctrl-group button {
-  width: 40px !important;
-  height: 40px !important;
+  width: clamp(36px, 5vw, 40px) !important;
+  height: clamp(36px, 5vw, 40px) !important;
   border: none !important;
 }
 
@@ -151,22 +132,47 @@
   border-top: 1px solid #e0e0e0 !important;
 }
 
+.mapboxgl-ctrl-bottom-left {
+  bottom: clamp(20px, 4vh, 30px) !important;
+  left: clamp(15px, 3vw, 20px) !important;
+  z-index: 10;
+  max-width: clamp(320px, 85vw, 450px);
+}
+
 .mapboxgl-ctrl-bottom-right {
-  bottom: 40px !important;
-  right: 10px !important;
+  bottom: clamp(20px, 4vh, 40px) !important;
+  right: clamp(8px, 2vw, 10px) !important;
 }
 
 .mapboxgl-ctrl-bottom-right .mapboxgl-ctrl {
-  margin: 0 0 10px 0 !important;
+  margin: 0 0 clamp(8px, 2vh, 10px) 0 !important;
 }
 
-/* Directions control styling - Style Google Maps */
+.mapboxgl-ctrl-top-left {
+  top: clamp(80px, 12vh, 100px) !important;
+  left: clamp(15px, 3vw, 20px) !important;
+  z-index: 10;
+}
+
+/* Bouton de géolocalisation - Responsive */
+.mapboxgl-ctrl-geolocate {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mapboxgl-ctrl-geolocate .mapboxgl-ctrl-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='29' viewBox='0 0 29 29' fill='%23333'%3E%3Cpath d='M14.5 3.5c-6.1 0-11 4.9-11 11s4.9 11 11 11 11-4.9 11-11-4.9-11-11-11zm0 2c5 0 9 4 9 9s-4 9-9 9-9-4-9-9 4-9 9-9z'/%3E%3Ccircle cx='14.5' cy='14.5' r='4'/%3E%3C/svg%3E");
+}
+
+/* Directions control styling - Exactement comme Google Maps */
 .mapboxgl-ctrl-directions {
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  max-width: 420px;
+  width: 100%;
   font-family: 'Roboto', 'Open Sans', sans-serif;
+  overflow: hidden;
 }
 
 .mapbox-directions-component {
@@ -181,24 +187,27 @@
 }
 
 .mapbox-directions-component-keyline {
-  background-color: #e0e0e0;
-  height: 1px;
-  margin: 0;
+  display: none;
 }
 
 .mapbox-directions-origin,
 .mapbox-directions-destination {
   background-color: white;
-  border: 1px solid #dadce0;
+  border: 1px solid #e0e0e0;
   border-radius: 4px;
-  margin-bottom: 12px;
-  transition: border-color 0.2s ease;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+}
+
+.mapbox-directions-origin:last-child,
+.mapbox-directions-destination:last-child {
+  margin-bottom: 0;
 }
 
 .mapbox-directions-origin:focus-within,
 .mapbox-directions-destination:focus-within {
   border-color: #1a73e8;
-  box-shadow: 0 0 0 1px #1a73e8;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 
 .mapbox-directions-origin input,
@@ -206,26 +215,31 @@
   font-family: 'Roboto', 'Open Sans', sans-serif;
   font-size: 14px;
   color: #202124;
-  padding: 12px 14px;
+  padding: 11px 14px;
   border: none;
   outline: none;
   width: 100%;
+  font-weight: 400;
+  background-color: transparent;
 }
 
 .mapbox-directions-origin input::placeholder,
 .mapbox-directions-destination input::placeholder {
-  color: #5f6368;
+  color: #70757a;
+  font-weight: 400;
 }
 
-/* Profils de transport - Style Google Maps */
+/* Profils de transport - Exactement comme Google Maps */
 .mapbox-directions-profile {
   display: flex;
-  gap: 8px;
-  padding: 12px 16px;
+  gap: 0;
+  padding: 0;
   background-color: white;
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
-  justify-content: space-between;
+  justify-content: stretch;
+  flex-wrap: nowrap;
+  margin: 0;
 }
 
 .mapbox-directions-profile input[type="radio"] {
@@ -234,49 +248,65 @@
 
 .mapbox-directions-profile label {
   cursor: pointer;
-  padding: 10px 16px;
-  border-radius: 20px;
-  transition: all 0.2s ease;
-  font-size: 13px;
+  padding: 16px 12px;
+  transition: background-color 0.2s ease;
+  font-size: 14px;
   font-weight: 500;
-  color: #5f6368;
+  color: #3c4043;
   flex: 1;
   text-align: center;
-  border: 1px solid #dadce0;
+  border: none;
+  border-right: 1px solid #e0e0e0;
   background-color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 4px;
   min-width: 0;
 }
 
+.mapbox-directions-profile label:last-child {
+  border-right: none;
+}
+
 .mapbox-directions-profile label:hover {
-  background-color: #f8f9fa;
-  border-color: #5f6368;
+  background-color: #f1f3f4;
 }
 
 .mapbox-directions-profile input:checked + label {
   background-color: #e8f0fe;
-  color: #1a73e8;
-  border-color: #1a73e8;
+  color: #1967d2;
   font-weight: 600;
+  position: relative;
 }
 
-.mapbox-directions-profile input:checked + label:hover {
-  background-color: #d2e3fc;
+.mapbox-directions-profile input:checked + label::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #1967d2;
 }
 
-/* Renommer les labels des profils */
+/* Icônes des profils - Style Google Maps */
+.mapbox-directions-profile label::before {
+  font-size: 20px;
+  display: block;
+}
+
 .mapbox-directions-profile label[for*="driving"]::before {
-  content: '🚗 ';
+  content: '🚗';
 }
 
 .mapbox-directions-profile label[for*="walking"]::before {
-  content: '🚶 ';
+  content: '🚶';
 }
 
 .mapbox-directions-profile label[for*="cycling"]::before {
-  content: '🚴 ';
+  content: '🚴';
 }
 
 .mapbox-directions-instructions {
@@ -287,8 +317,8 @@
 }
 
 .mapbox-directions-route-summary {
-  background-color: #f8f9fa;
-  padding: 14px 16px;
+  background-color: white;
+  padding: 16px;
   border-bottom: 1px solid #e0e0e0;
   font-size: 14px;
   font-weight: 500;
@@ -296,14 +326,14 @@
 }
 
 .mapbox-directions-route {
-  padding: 12px 16px;
+  padding: 16px;
   border-bottom: 1px solid #e0e0e0;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .mapbox-directions-route:hover {
-  background-color: #f8f9fa;
+  background-color: #f1f3f4;
 }
 
 .mapbox-directions-route-heading {
@@ -318,48 +348,112 @@
   color: #5f6368;
 }
 
-/* Bouton de géolocalisation */
-.mapboxgl-ctrl-geolocate {
-  background-color: white;
-  border-radius: 2px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-}
 
-.mapboxgl-ctrl-geolocate .mapboxgl-ctrl-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='29' viewBox='0 0 29 29' fill='%23333'%3E%3Cpath d='M14.5 3.5c-6.1 0-11 4.9-11 11s4.9 11 11 11 11-4.9 11-11-4.9-11-11-11zm0 2c5 0 9 4 9 9s-4 9-9 9-9-4-9-9 4-9 9-9z'/%3E%3Ccircle cx='14.5' cy='14.5' r='4'/%3E%3C/svg%3E");
-}
 
+/* Responsive breakpoints */
 @media (max-width: 1024px) {
-  .location-map-fullscreen {
-    height: calc(100vh - 200px);
-  }
-  
-  .mapboxgl-ctrl-directions {
-    max-width: 340px;
-  }
-  
-  .mapbox-directions-profile {
-    flex-wrap: wrap;
-  }
-  
-  .mapbox-directions-profile label {
-    flex: 1 1 45%;
-    min-width: 100px;
-  }
-  
-  .mapboxgl-ctrl-bottom-right {
-    bottom: 20px !important;
-    right: 10px !important;
+  .mapboxgl-ctrl-bottom-left {
+    bottom: 15px !important;
+    left: 15px !important;
+    max-width: 400px;
   }
 }
 
 @media (max-width: 768px) {
-  .location-header-section h1 {
-    font-size: 2rem;
+  .mapboxgl-ctrl-bottom-left {
+    bottom: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+    max-width: calc(100vw - 20px);
   }
+  
+  .mapbox-directions-profile label {
+    padding: 14px 8px;
+    font-size: 13px;
+  }
+  
+  .mapbox-directions-profile label::before {
+    font-size: 18px;
+  }
+  
+  .mapboxgl-ctrl-bottom-right {
+    bottom: 15px !important;
+    right: 8px !important;
+  }
+  
+  .marker-label {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
 
+@media (max-width: 480px) {
+  .mapboxgl-ctrl-bottom-left {
+    bottom: 8px !important;
+    left: 8px !important;
+    right: 8px !important;
+    max-width: calc(100vw - 16px);
+  }
+  
+  .mapbox-directions-inputs {
+    padding: 12px;
+  }
+  
+  .mapbox-directions-profile label {
+    padding: 12px 6px;
+    font-size: 12px;
+    gap: 2px;
+  }
+  
+  .mapbox-directions-profile label::before {
+    font-size: 16px;
+  }
+  
+  .mapbox-directions-instructions {
+    max-height: 250px;
+  }
+  
+  .mapboxgl-ctrl-group button {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  
+  .mapboxgl-ctrl-bottom-right {
+    bottom: 12px !important;
+    right: 6px !important;
+  }
+  
+  .mapboxgl-ctrl-bottom-right .mapboxgl-ctrl {
+    margin: 0 0 8px 0 !important;
+  }
+  
+  .marker-label {
+    display: none;
+  }
+  
+  .pin-head {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .pin-head::after {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+@media (max-width: 360px) {
   .location-map-fullscreen {
-    height: calc(100vh - 200px);
-    min-height: 500px;
+    height: calc(100vh - 130px);
+    min-height: 300px;
+  }
+  
+  .mapbox-directions-profile label {
+    font-size: 9px;
+    padding: 6px 3px;
+  }
+  
+  .mapboxgl-ctrl-directions {
+    font-size: 12px;
   }
 }
