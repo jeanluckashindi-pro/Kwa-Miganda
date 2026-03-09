@@ -1,0 +1,22 @@
+.heritage {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heritage h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heritage-content section {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.heritage-content h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}

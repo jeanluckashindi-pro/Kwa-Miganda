@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "home": "NYUMBANI",
+    "experience": "UZOEFU",
+    "lodge": "LODGE",
+    "heritage": "URITHI",
+    "gallery": "PICHA",
+    "location": "MAHALI",
+    "bookNow": "WEKA NAFASI"
+  },
+  "home": {
+    "location": "MWARO, BURUNDI",
+    "title": "Kwa Miganda",
+    "subtitle": "Mahali Urithi wa Burundi Unakutana na Asili",
+    "description": "Makao ya kiutamaduni na mazingira katika vilima vya Mwaro ambapo wageni wanagundua mila za kale, asili, na ukarimu wa kweli.",
+    "bookStay": "WEKA NAFASI YAKO",
+    "discoverExperiences": "GUNDUA UZOEFU",
+    "scroll": "SOGEZA",
+    "ourStory": "HADITHI YETU",
+    "storyTitle": "Mahali hekima ya Burundi ya kale inakutana na utulivu wa asili.",
+    "storyDescription1": "Wageni wanakaribisha katika Rugo ya jadi — nyumba ya mababu — ambapo wanagundua ibada, muziki, ufundi, na mimea ya dawa iliyopitishwa kwa vizazi.",
+    "storyDescription2": "Kwa Miganda ni mradi wa uhifadhi wa kitamaduni na makao ya amani, yaliyoko katika vilima vya kijani vya mkoa wa Mwaro.",
+    "experiencesLabel": "UZOEFU",
+    "experiencesTitle": "Gundua Urithi Hai",
+    "heritageVisit": {
+      "title": "Ziara ya Urithi",
+      "description": "Chunguza nyumba ya Rugo ya jadi na gundua usanifu wa Burundi wa kale na maisha ya kila siku."
+    },
+    "culturalExperience": {
+      "title": "Uzoefu wa Kitamaduni",
+      "description": "Jizamisha katika muziki wa jadi, ngoma, ushairi, na sherehe za hadithi."
+    },
+    "natureWalks": {
+      "title": "Matembezi ya Asili",
+      "description": "Tembea kupitia vilima vya kijani vya Mwaro, ukiongozwa na wataalam wa ndani."
+    },
+    "botanicalGarden": {
+      "title": "Bustani ya Mimea",
+      "description": "Gundua mimea ya dawa ya asili na ujifunze kuhusu mazoea ya uponyaji wa jadi."
+    },
+    "learnMore": "JIFUNZE ZAIDI"
+  },
+  "experience": {
+    "title": "Uzoefu Wetu",
+    "safari": {
+      "title": "Safari ya Asili",
+      "description": "Chunguza wanyama wa eneo hili na waongozaji wetu wataalam"
+    },
+    "hiking": {
+      "title": "Kutembea Milimani",
+      "description": "Gundua njia nzuri"
+    },
+    "cultural": {
+      "title": "Shughuli za Kitamaduni",
+      "description": "Jizamisha katika utamaduni wa ndani"
+    }
+  },
+  "lodge": {
+    "title": "Lodge Yetu",
+    "description": "Gundua lodge yetu ya starehe na ya asili, iliyoko katikati ya asili.",
+    "amenities": "Vifaa",
+    "rooms": "Vyumba vikubwa na mandhari nzuri",
+    "restaurant": "Mkahawa wa kifahari",
+    "pool": "Bwawa la nje",
+    "spa": "Spa na afya"
+  },
+  "heritage": {
+    "title": "Urithi Wetu",
+    "history": {
+      "title": "Historia",
+      "description": "Gundua historia tajiri na ya kuvutia ya eneo letu."
+    },
+    "culture": {
+      "title": "Utamaduni",
+      "description": "Ingia katika mila na utamaduni wa ndani uliohifadhiwa kwa vizazi."
+    },
+    "conservation": {
+      "title": "Uhifadhi",
+      "description": "Dhamira yetu ya kuhifadhi mazingira na urithi wa kitamaduni."
+    }
+  },
+  "gallery": {
+    "title": "Mkusanyiko wa Picha"
+  },
+  "location": {
+    "title": "Mahali Petu",
+    "howToFind": "Jinsi ya kutupata",
+    "address": "Anwani",
+    "addressValue": "Kwa Miganda Lodge, Mkoa wa Mwaro",
+    "phone": "Simu",
+    "email": "Barua pepe",
+    "access": "Ufikiaji",
+    "byCar": "Kwa gari: masaa 2 kutoka jiji kuu",
+    "airportTransfer": "Usafirishaji wa uwanja wa ndege unapatikana",
+    "gps": "Kuratibu za GPS",
+    "mapPlaceholder": "Ramani ya maingiliano"
+  },
+  "booking": {
+    "title": "Weka Nafasi Sasa",
+    "fullName": "Jina kamili",
+    "email": "Barua pepe",
+    "phone": "Simu",
+    "checkin": "Tarehe ya kuwasili",
+    "checkout": "Tarehe ya kuondoka",
+    "guests": "Idadi ya wageni",
+    "guestOptions": {
+      "1": "Mgeni 1",
+      "2": "Wageni 2",
+      "3": "Wageni 3",
+      "4": "Wageni 4",
+      "5": "Wageni 5+"
+    },
+    "message": "Ujumbe (si lazima)",
+    "submit": "Thibitisha uhifadhi",
+    "successMessage": "Asante kwa uhifadhi wako! Tutawasiliana nawe hivi karibuni."
+  },
+  "footer": {
+    "description": "Makao ya kiutamaduni na mazingira katika vilima vya Mwaro, Burundi. Mahali mila za kale zinakutana na utulivu wa asili.",
+    "explore": "GUNDUA",
+    "contact": "WASILIANA",
+    "location": "Mkoa wa Mwaro, Burundi",
+    "email": "contact@kwamiganda.com",
+    "copyright": "© 2025 Kwa Miganda. Haki zote zimehifadhiwa.",
+    "tagline": "Uzoefu wa Urithi wa Kitamaduni"
+  }
+}

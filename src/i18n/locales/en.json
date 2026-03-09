@@ -1,0 +1,173 @@
+{
+  "nav": {
+    "home": "HOME",
+    "experience": "EXPERIENCE",
+    "lodge": "LODGE",
+    "heritage": "HERITAGE",
+    "gallery": "GALLERY",
+    "location": "LOCATION",
+    "bookNow": "BOOK NOW"
+  },
+  "home": {
+    "location": "MWARO, BURUNDI",
+    "title": "Kwa Miganda",
+    "subtitle": "Where Burundian Heritage Meets Nature",
+    "description": "A cultural eco-retreat in the hills of Mwaro where visitors discover ancestral traditions, nature, and authentic hospitality.",
+    "bookStay": "BOOK YOUR STAY",
+    "discoverExperiences": "DISCOVER EXPERIENCES",
+    "scroll": "SCROLL",
+    "ourStory": "OUR STORY",
+    "storyTitle": "Where the wisdom of ancestral Burundi meets the serenity of nature.",
+    "storyDescription1": "Visitors are welcomed into a traditional Rugo — the ancestral homestead — where they discover rituals, music, crafts, and medicinal plants passed down through generations.",
+    "storyDescription2": "Kwa Miganda is both a cultural preservation project and a peaceful retreat, nestled in the green hills of Mwaro province.",
+    "experiencesLabel": "EXPERIENCES",
+    "experiencesTitle": "Discover the Living Heritage",
+    "heritageVisit": {
+      "title": "Heritage Visit",
+      "description": "Explore the traditional Rugo homestead and discover ancestral Burundian architecture and daily life."
+    },
+    "culturalExperience": {
+      "title": "Cultural Experience",
+      "description": "Immerse yourself in traditional music, drumming, poetry, and storytelling ceremonies."
+    },
+    "natureWalks": {
+      "title": "Nature Walks",
+      "description": "Walk through the rolling green hills of Mwaro, guided by local experts."
+    },
+    "botanicalGarden": {
+      "title": "Botanical Garden",
+      "description": "Discover indigenous medicinal plants and learn about traditional healing practices."
+    },
+    "learnMore": "LEARN MORE",
+    "findUs": "Find Us in Mwaro",
+    "findUsDescription": "Kwa Miganda is located in Mwaro Province, in the heart of Burundi's lush highlands — easily accessible from both major cities.",
+    "locationInfo": {
+      "hours": {
+        "title": "2 hours",
+        "from": "from Bujumbura"
+      },
+      "minutes": {
+        "title": "35 minutes",
+        "from": "from Gitega"
+      },
+      "province": {
+        "title": "Mwaro Province",
+        "subtitle": "Central Burundi"
+      }
+    },
+    "openInMaps": "Open in Maps",
+    "copyAddress": "Copy Address",
+    "cta": {
+      "label": "PLAN YOUR JOURNEY",
+      "title": "Plan Your Visit to Kwa Miganda",
+      "description": "Begin your journey into Burundi's heritage and nature.",
+      "button": "BOOK YOUR EXPERIENCE"
+    },
+    "heritage": {
+      "label": "CULTURAL HERITAGE",
+      "title": "A Living Testament to Burundian Tradition",
+      "description": "Kwa Miganda is more than a destination — it is a preservation of identity, where every hut, plant, and song tells a story of resilience and beauty.",
+      "features": {
+        "architecture": {
+          "title": "Traditional Architecture",
+          "description": "The Rugo compound preserves ancestral building techniques using earth, wood, and thatch — a living museum of Burundian domestic life."
+        },
+        "plants": {
+          "title": "Medicinal Plants",
+          "description": "Our botanical garden holds dozens of indigenous species used for centuries in traditional healing, documented and maintained by local elders."
+        },
+        "music": {
+          "title": "Music & Poetry",
+          "description": "Experience the rhythmic power of Burundian drumming and the oral poetry tradition that carries stories across generations."
+        },
+        "community": {
+          "title": "Community",
+          "description": "Kwa Miganda directly supports local families, ensuring that cultural knowledge is preserved and shared with the world."
+        }
+      }
+    }
+  },
+  "experience": {
+    "title": "Our Experiences",
+    "safari": {
+      "title": "Nature Safari",
+      "description": "Explore local wildlife with our expert guides"
+    },
+    "hiking": {
+      "title": "Hiking",
+      "description": "Discover beautiful trails"
+    },
+    "cultural": {
+      "title": "Cultural Activities",
+      "description": "Immerse yourself in local culture"
+    }
+  },
+  "lodge": {
+    "title": "Our Lodge",
+    "description": "Discover our comfortable and authentic lodge, nestled in the heart of nature.",
+    "amenities": "Amenities",
+    "rooms": "Spacious rooms with panoramic views",
+    "restaurant": "Gourmet restaurant",
+    "pool": "Outdoor pool",
+    "spa": "Spa and wellness"
+  },
+  "heritage": {
+    "title": "Our Heritage",
+    "history": {
+      "title": "History",
+      "description": "Discover the rich and fascinating history of our region."
+    },
+    "culture": {
+      "title": "Culture",
+      "description": "Dive into local traditions and culture preserved for generations."
+    },
+    "conservation": {
+      "title": "Conservation",
+      "description": "Our commitment to preserving the environment and cultural heritage."
+    }
+  },
+  "gallery": {
+    "title": "Photo Gallery"
+  },
+  "location": {
+    "title": "Our Location",
+    "howToFind": "How to find us",
+    "address": "Address",
+    "addressValue": "Kwa Miganda Lodge, Mwaro Region",
+    "phone": "Phone",
+    "email": "Email",
+    "access": "Access",
+    "byCar": "By car: 2 hours from the main city",
+    "airportTransfer": "Airport transfer available",
+    "gps": "GPS Coordinates",
+    "mapPlaceholder": "Interactive map"
+  },
+  "booking": {
+    "title": "Book Now",
+    "fullName": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "checkin": "Check-in date",
+    "checkout": "Check-out date",
+    "guests": "Number of guests",
+    "guestOptions": {
+      "1": "1 guest",
+      "2": "2 guests",
+      "3": "3 guests",
+      "4": "4 guests",
+      "5": "5+ guests"
+    },
+    "message": "Message (optional)",
+    "submit": "Confirm booking",
+    "successMessage": "Thank you for your booking! We will contact you soon."
+  },
+  "footer": {
+    "description": "A cultural heritage eco-retreat in the hills of Mwaro, Burundi. Where ancestral tradition meets the serenity of nature.",
+    "explore": "EXPLORE",
+    "contact": "CONTACT",
+    "location": "Mwaro Province, Burundi",
+    "email": "contact@kwamiganda.com",
+    "copyright": "© 2025 Kwa Miganda. All rights reserved.",
+    "tagline": "A Cultural Heritage Experience"
+  }
+}

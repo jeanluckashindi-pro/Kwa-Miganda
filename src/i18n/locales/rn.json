@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "home": "AHABANZA",
+    "experience": "UBUNARARIBONYE",
+    "lodge": "LODGE",
+    "heritage": "UMURAGE",
+    "gallery": "AMAFOTO",
+    "location": "AHO DURI",
+    "bookNow": "TANGA UMWANYA"
+  },
+  "home": {
+    "location": "MWARO, BURUNDI",
+    "title": "Kwa Miganda",
+    "subtitle": "Aho Umurage w'Uburundi Uhurira n'Ubwiza bw'Isi",
+    "description": "Ikigega c'umuco n'ibidukikije mu misozi ya Mwaro aho abashitsi basanga imigenzo ya kera, ubwiza bw'isi, n'ubushake nyakuri.",
+    "bookStay": "TANGA UMWANYA WAWE",
+    "discoverExperiences": "VUMBURA UBUNARARIBONYE",
+    "scroll": "MANUZA",
+    "ourStory": "INKURU YACU",
+    "storyTitle": "Aho ubwenge bw'Uburundi bwa kera buhurira n'ubwiza bw'isi.",
+    "storyDescription1": "Abashitsi barakirwa mu Rugo rya kera — inzu y'abasogokuruza — aho basanga imihango, umuziki, ubukorikori, n'ibimera vy'ubuvuzi vyatanzwe mu bwonko.",
+    "storyDescription2": "Kwa Miganda ni umushinga w'uburorerwe bw'umuco n'ikigega c'amahoro, kiri mu misozi y'icyatsi ya Mwaro.",
+    "experiencesLabel": "UBUNARARIBONYE",
+    "experiencesTitle": "Vumbura Umurage Uzima",
+    "heritageVisit": {
+      "title": "Gusura Umurage",
+      "description": "Vumbura Rugo rya kera maze uvumbure ubwubatsi bw'Uburundi bwa kera n'ubuzima bwa buri munsi."
+    },
+    "culturalExperience": {
+      "title": "Ubunararibonye bw'Umuco",
+      "description": "Winjire mu muziki wa kera, ingoma, imivugo, n'imihango y'inkuru."
+    },
+    "natureWalks": {
+      "title": "Kugenda mu Bwiza bw'Isi",
+      "description": "Genda mu misozi y'icyatsi ya Mwaro, uyobowe n'inzobere z'aha hantu."
+    },
+    "botanicalGarden": {
+      "title": "Ubusitani bw'Ibimera",
+      "description": "Vumbura ibimera vy'ubuvuzi vya kera maze wige ku migenzo yo kuvura ya kera."
+    },
+    "learnMore": "MENYA VYINSHI"
+  },
+  "experience": {
+    "title": "Ubunararibonye Bwacu",
+    "safari": {
+      "title": "Safari y'Ubwiza bw'Isi",
+      "description": "Vumbura inyamaswa z'aha hantu hamwe n'abayobozi bacu b'inzobere"
+    },
+    "hiking": {
+      "title": "Kugenda mu Misozi",
+      "description": "Vumbura inzira nziza"
+    },
+    "cultural": {
+      "title": "Ibikorwa vy'Umuco",
+      "description": "Winjire mu muco w'aha hantu"
+    }
+  },
+  "lodge": {
+    "title": "Lodge Yacu",
+    "description": "Vumbura lodge yacu yoroshye kandi y'ukuri, iri mu mutima w'ubwiza bw'isi.",
+    "amenities": "Ibikoresho",
+    "rooms": "Ibyumba binini bifise amashusho meza",
+    "restaurant": "Resitora nziza",
+    "pool": "Pisine yo hanze",
+    "spa": "Spa n'ubuzima"
+  },
+  "heritage": {
+    "title": "Umurage Wacu",
+    "history": {
+      "title": "Amateka",
+      "description": "Vumbura amateka y'ubutunzi kandi ashimishije y'ako karere kacu."
+    },
+    "culture": {
+      "title": "Umuco",
+      "description": "Winjire mu migenzo n'umuco w'aha hantu vyarorokanijwe mu bwonko."
+    },
+    "conservation": {
+      "title": "Uburorerwe",
+      "description": "Ubwitange bwacu mu kurorera ibidukikije n'umurage w'umuco."
+    }
+  },
+  "gallery": {
+    "title": "Amafoto"
+  },
+  "location": {
+    "title": "Aho Duri",
+    "howToFind": "Uko muzodusanga",
+    "address": "Aderesi",
+    "addressValue": "Kwa Miganda Lodge, Intara ya Mwaro",
+    "phone": "Telefone",
+    "email": "Imeri",
+    "access": "Ingene yo kugera",
+    "byCar": "Mu modoka: amasaha 2 uhereye mu mujyi munini",
+    "airportTransfer": "Ubwikorezi bwo ku kibuga c'indege burahari",
+    "gps": "Aho duri kuri GPS",
+    "mapPlaceholder": "Ikarita"
+  },
+  "booking": {
+    "title": "Tanga Umwanya Ubu",
+    "fullName": "Amazina yose",
+    "email": "Imeri",
+    "phone": "Telefone",
+    "checkin": "Itariki yo kuza",
+    "checkout": "Itariki yo kugenda",
+    "guests": "Umubare w'abantu",
+    "guestOptions": {
+      "1": "Umuntu 1",
+      "2": "Abantu 2",
+      "3": "Abantu 3",
+      "4": "Abantu 4",
+      "5": "Abantu 5+"
+    },
+    "message": "Ubutumwa (ntibigomba)",
+    "submit": "Emeza gutanga umwanya",
+    "successMessage": "Murakoze ko mutanze umwanya! Tuzobamenyesha vuba."
+  },
+  "footer": {
+    "description": "Ikigega c'umuco n'ibidukikije mu misozi ya Mwaro, Burundi. Aho imigenzo ya kera ihurira n'ubwiza bw'isi.",
+    "explore": "VUMBURA",
+    "contact": "TWANDIKIRE",
+    "location": "Intara ya Mwaro, Burundi",
+    "email": "contact@kwamiganda.com",
+    "copyright": "© 2025 Kwa Miganda. Uburenganzira bwose burarorerwa.",
+    "tagline": "Ubunararibonye bw'Umurage w'Umuco"
+  }
+}

@@ -1,0 +1,39 @@
+.lodge {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lodge h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.lodge-content {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.amenities {
+  margin-top: 2rem;
+}
+
+.amenities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.amenities li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.amenities li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-weight: bold;
+}

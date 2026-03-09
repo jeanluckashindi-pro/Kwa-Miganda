@@ -1,0 +1,152 @@
+/* Font Family Classes - Réutilisables */
+
+/* Anton - Bold display font */
+.font-anton {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+}
+
+/* Antonio - Variable weight sans-serif */
+.font-antonio {
+  font-family: 'Antonio', sans-serif;
+}
+
+.font-antonio-thin {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 100;
+}
+
+.font-antonio-light {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 300;
+}
+
+.font-antonio-regular {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 400;
+}
+
+.font-antonio-medium {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 500;
+}
+
+.font-antonio-semibold {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 600;
+}
+
+.font-antonio-bold {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 700;
+}
+
+/* Kaushan Script - Handwritten script font */
+.font-kaushan {
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+}
+
+/* Open Sans - Clean, readable sans-serif */
+.font-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-opensans-light {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.font-opensans-regular {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.font-opensans-medium {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+.font-opensans-semibold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.font-opensans-bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.font-opensans-extrabold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+.font-opensans-italic {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+/* Ubuntu - Modern, friendly sans-serif */
+.font-ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.font-ubuntu-light {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+.font-ubuntu-regular {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.font-ubuntu-medium {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.font-ubuntu-bold {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.font-ubuntu-italic {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+}
+
+/* Utility classes for common text styles */
+.text-display {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.text-heading {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.text-script {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.text-body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.text-ui {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,173 @@
+{
+  "nav": {
+    "home": "ACCUEIL",
+    "experience": "EXPERIENCE",
+    "lodge": "LODGE",
+    "heritage": "HERITAGE",
+    "gallery": "GALERIE",
+    "location": "LOCALISATION",
+    "bookNow": "RÉSERVER"
+  },
+  "home": {
+    "location": "MWARO, BURUNDI",
+    "title": "Kwa Miganda",
+    "subtitle": "Où le Patrimoine Burundais Rencontre la Nature",
+    "description": "Une retraite éco-culturelle dans les collines de Mwaro où les visiteurs découvrent les traditions ancestrales, la nature et l'hospitalité authentique.",
+    "bookStay": "RÉSERVER VOTRE SÉJOUR",
+    "discoverExperiences": "DÉCOUVRIR LES EXPÉRIENCES",
+    "scroll": "DÉFILER",
+    "ourStory": "NOTRE HISTOIRE",
+    "storyTitle": "Où la sagesse du Burundi ancestral rencontre la sérénité de la nature.",
+    "storyDescription1": "Les visiteurs sont accueillis dans un Rugo traditionnel — la ferme ancestrale — où ils découvrent les rituels, la musique, l'artisanat et les plantes médicinales transmis de génération en génération.",
+    "storyDescription2": "Kwa Miganda est à la fois un projet de préservation culturelle et une retraite paisible, nichée dans les collines verdoyantes de la province de Mwaro.",
+    "experiencesLabel": "EXPÉRIENCES",
+    "experiencesTitle": "Découvrez le Patrimoine Vivant",
+    "heritageVisit": {
+      "title": "Visite du Patrimoine",
+      "description": "Explorez le Rugo traditionnel et découvrez l'architecture burundaise ancestrale et la vie quotidienne."
+    },
+    "culturalExperience": {
+      "title": "Expérience Culturelle",
+      "description": "Plongez dans la musique traditionnelle, les tambours, la poésie et les cérémonies de contes."
+    },
+    "natureWalks": {
+      "title": "Promenades Nature",
+      "description": "Marchez à travers les collines verdoyantes de Mwaro, guidé par des experts locaux."
+    },
+    "botanicalGarden": {
+      "title": "Jardin Botanique",
+      "description": "Découvrez les plantes médicinales indigènes et apprenez les pratiques de guérison traditionnelles."
+    },
+    "learnMore": "EN SAVOIR PLUS",
+    "findUs": "Trouvez-nous à Mwaro",
+    "findUsDescription": "Kwa Miganda est situé dans la province de Mwaro, au cœur des hautes terres verdoyantes du Burundi — facilement accessible depuis les deux grandes villes.",
+    "locationInfo": {
+      "hours": {
+        "title": "2 heures",
+        "from": "depuis Bujumbura"
+      },
+      "minutes": {
+        "title": "35 minutes",
+        "from": "depuis Gitega"
+      },
+      "province": {
+        "title": "Province de Mwaro",
+        "subtitle": "Burundi Central"
+      }
+    },
+    "openInMaps": "Ouvrir dans Maps",
+    "copyAddress": "Copier l'adresse",
+    "cta": {
+      "label": "PLANIFIEZ VOTRE VOYAGE",
+      "title": "Planifiez Votre Visite à Kwa Miganda",
+      "description": "Commencez votre voyage dans le patrimoine et la nature du Burundi.",
+      "button": "RÉSERVEZ VOTRE EXPÉRIENCE"
+    },
+    "heritage": {
+      "label": "PATRIMOINE CULTUREL",
+      "title": "Un Témoignage Vivant de la Tradition Burundaise",
+      "description": "Kwa Miganda est plus qu'une destination — c'est une préservation de l'identité, où chaque hutte, plante et chanson raconte une histoire de résilience et de beauté.",
+      "features": {
+        "architecture": {
+          "title": "Architecture Traditionnelle",
+          "description": "Le complexe Rugo préserve les techniques de construction ancestrales utilisant la terre, le bois et le chaume — un musée vivant de la vie domestique burundaise."
+        },
+        "plants": {
+          "title": "Plantes Médicinales",
+          "description": "Notre jardin botanique abrite des dizaines d'espèces indigènes utilisées depuis des siècles dans la guérison traditionnelle, documentées et entretenues par les anciens locaux."
+        },
+        "music": {
+          "title": "Musique & Poésie",
+          "description": "Découvrez la puissance rythmique des tambours burundais et la tradition de poésie orale qui transmet des histoires à travers les générations."
+        },
+        "community": {
+          "title": "Communauté",
+          "description": "Kwa Miganda soutient directement les familles locales, garantissant que les connaissances culturelles sont préservées et partagées avec le monde."
+        }
+      }
+    }
+  },
+  "experience": {
+    "title": "Nos Expériences",
+    "safari": {
+      "title": "Safari Nature",
+      "description": "Explorez la faune locale avec nos guides experts"
+    },
+    "hiking": {
+      "title": "Randonnées",
+      "description": "Découvrez des sentiers magnifiques"
+    },
+    "cultural": {
+      "title": "Activités Culturelles",
+      "description": "Immergez-vous dans la culture locale"
+    }
+  },
+  "lodge": {
+    "title": "Notre Lodge",
+    "description": "Découvrez notre lodge confortable et authentique, niché au cœur de la nature.",
+    "amenities": "Équipements",
+    "rooms": "Chambres spacieuses avec vue panoramique",
+    "restaurant": "Restaurant gastronomique",
+    "pool": "Piscine extérieure",
+    "spa": "Spa et bien-être"
+  },
+  "heritage": {
+    "title": "Notre Héritage",
+    "history": {
+      "title": "Histoire",
+      "description": "Découvrez l'histoire riche et fascinante de notre région."
+    },
+    "culture": {
+      "title": "Culture",
+      "description": "Plongez dans les traditions et la culture locale préservées depuis des générations."
+    },
+    "conservation": {
+      "title": "Conservation",
+      "description": "Notre engagement pour la préservation de l'environnement et du patrimoine culturel."
+    }
+  },
+  "gallery": {
+    "title": "Galerie Photos"
+  },
+  "location": {
+    "title": "Notre Emplacement",
+    "howToFind": "Comment nous trouver",
+    "address": "Adresse",
+    "addressValue": "Kwa Miganda Lodge, Région de Mwaro",
+    "phone": "Téléphone",
+    "email": "Email",
+    "access": "Accès",
+    "byCar": "En voiture: 2 heures depuis la ville principale",
+    "airportTransfer": "Transfert aéroport disponible",
+    "gps": "Coordonnées GPS",
+    "mapPlaceholder": "Carte interactive"
+  },
+  "booking": {
+    "title": "Réserver Maintenant",
+    "fullName": "Nom complet",
+    "email": "Email",
+    "phone": "Téléphone",
+    "checkin": "Date d'arrivée",
+    "checkout": "Date de départ",
+    "guests": "Nombre de personnes",
+    "guestOptions": {
+      "1": "1 personne",
+      "2": "2 personnes",
+      "3": "3 personnes",
+      "4": "4 personnes",
+      "5": "5+ personnes"
+    },
+    "message": "Message (optionnel)",
+    "submit": "Confirmer la réservation",
+    "successMessage": "Merci pour votre réservation! Nous vous contactons bientôt."
+  },
+  "footer": {
+    "description": "Une retraite éco-culturelle dans les collines de Mwaro, Burundi. Où la tradition ancestrale rencontre la sérénité de la nature.",
+    "explore": "EXPLORER",
+    "contact": "CONTACT",
+    "location": "Province de Mwaro, Burundi",
+    "email": "contact@kwamiganda.com",
+    "copyright": "© 2025 Kwa Miganda. Tous droits réservés.",
+    "tagline": "Une Expérience du Patrimoine Culturel"
+  }
+}
